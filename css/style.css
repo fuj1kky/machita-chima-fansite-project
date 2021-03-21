@@ -8,10 +8,9 @@ body {
   line-height: 2;
 }
 
-p,h1,h2,h3,h4,h5,h6 {
+p, h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-family: 'Noto Serif JP', serif;
-
 }
 
 img {
@@ -31,7 +30,7 @@ a:hover {
   text-decoration: underline;
 }
 
-header{
+header {
   width: 960px;
   height: 100px;
   margin: 0 auto;
@@ -42,7 +41,6 @@ header{
   margin-top: 40px;
   margin-left: 10px;
 }
-
 
 .global_nav {
   float: right;
@@ -61,7 +59,7 @@ header{
   font-family: 'Darker Grotesque', sans-serif;
 }
 
-.global_nav li a:hover{
+.global_nav li a:hover {
   border-bottom: 1.2px solid #000000;
   padding-bottom: 2.5px;
   text-decoration: none;
@@ -94,7 +92,6 @@ footer small {
   background-position: center top;
   background-attachment: fixed;
   background-size: 100% auto;
-
 }
 
 #index h2 {
@@ -109,13 +106,12 @@ footer small {
   padding: 45px 0;
 }
 
-
 .left-content {
   float: left;
 }
 
 .right-content {
-  float:right;
+  float: right;
 }
 
 .youtube-new {
@@ -128,7 +124,7 @@ footer small {
 
 .clearfix:after {
   content: "";
-  display:block;
+  display: block;
   clear: both;
 }
 
@@ -161,7 +157,6 @@ footer small {
   padding-bottom: 600px;
 }
 
-
 #archive {
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
@@ -190,14 +185,12 @@ footer small {
   float: left;
 }
 
-
 #archive .sidebar {
   width: 250px;
   margin: 0 10px 0 30px;
   padding-top: 165px;
   float: right;
 }
-
 
 .genre_checkbox {
   font-family: 'Noto Serif JP', serif;
@@ -213,4 +206,38 @@ footer small {
 .youtube_content {
   padding-bottom: 50px;
   padding-left: 27px;
-} */
+}
+
+  /*
+  YouTube 初回表示軽量化スクリプト
+  Copyright Rectus Inc, 2020/05/11 Ver 0.04
+  https://www.rectus.co.jp/
+ */
+
+.yt {
+  position:relative;
+}
+.yt_play {
+  position: absolute;
+}
+.yt_play:hover {
+  cursor:pointer;
+}
+.yt_play::before { /* YouTubeアイコン */
+  position: absolute;
+  background: url(../img/yt_icon_mono_light.png);
+  content: "";
+  background-size: 100%;
+  width: 70px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%,-50%);
+  opacity: .90;
+  transition:.5s;
+}
+
+.yt_play:hover::before { /* YouTubeアイコン */
+  cursor: pointer;
+  background-image:url(../img/yt_icon_rgb.png);
+}
