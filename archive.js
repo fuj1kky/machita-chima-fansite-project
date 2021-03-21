@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
 
-    element.src = ytimgurl ;
+    element.src = ytimgurl;
 
     // iframeをサムネイル画像に置換
     var divyt = document.createElement("div");
