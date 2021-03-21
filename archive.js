@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
       widths[index] = Math.floor(maxWidth);
     }
 
-    img = 'hqdefault';
+    img = 'maxresdefault';
     if (imgs[index]) {
       img = imgs[index];
     }
@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
       // 高精細にしたい場合は data-img="maxresdefault" を指定
       images[index] = '//img.youtube.com/vi/' + id + '/' + img + '.jpg';
     }
-
 
     // iframeをサムネイル画像に置換
     var divyt = document.createElement("div");
