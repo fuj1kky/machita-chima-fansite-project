@@ -48,6 +48,16 @@ document.addEventListener("DOMContentLoaded", function() {
       images[index] = '//img.youtube.com/vi/' + id + '/' + img + '.jpg';
     }
 
+<<<<<<< HEAD
+=======
+    var element = new Image();
+    img.src = images[index];
+    var img_width  = img.width;
+
+    if (img_width < 720){
+      images[index] = '//img.youtube.com/vi/' + id + '/' + mqdefault + '.jpg';
+    }
+>>>>>>> 69b6bf9b12fbed21aedb8047096a80db7702194b
 
     // iframeをサムネイル画像に置換
     var divyt = document.createElement("div");
