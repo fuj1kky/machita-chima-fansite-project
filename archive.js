@@ -48,15 +48,13 @@ document.addEventListener("DOMContentLoaded", function() {
       images[index] = '//img.youtube.com/vi/' + id + '/' + img + '.jpg';
     }
 
-    var ytimgurl = images[index];
     var element = new Image();
-    element.onload = function(){
-      if(element.naturalWidth < 720) {
-        images[index] = '//img.youtube.com/vi/' + id + '/' + hqdefault + '.jpg';
-      }
-    }
+    img.src = images[index];
+    var img_width  = img.width;
 
-    element.src = ytimgurl;
+    if (img_width < 720){
+      images[index] = '//img.youtube.com/vi/' + id + '/' + mqdefault + '.jpg';
+    }
 
     // iframeをサムネイル画像に置換
     var divyt = document.createElement("div");
