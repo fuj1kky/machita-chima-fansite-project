@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
       // 高精細にしたい場合は data-img="maxresdefault" を指定
       images[index] = '//img.youtube.com/vi/' + id + '/' + img + '.jpg';
+      data-img = "maxresdefault";
     }
 
     // iframeをサムネイル画像に置換
