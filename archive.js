@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
       widths[index] = Math.floor(maxWidth);
     }
 
-    img = 'hqdefault';
+    img = 'mqdefault';
     if (imgs[index]) {
       img = imgs[index];
     }
