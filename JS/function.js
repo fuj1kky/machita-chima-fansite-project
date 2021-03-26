@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(){
       case 'genre_all':
         display_all = Array.from(display_all);
         for (var i = 0; i < display_all.length; i++) {
-          display_songs[i].style.display = "";
+          display_all[i].style.display = "";
         }
         break;
       case 'genre_song':
