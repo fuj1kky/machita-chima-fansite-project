@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var display_songs = document.getElementsByClassName('songs');
     var display_minecraft = document.getElementsByClassName('minecraft');
     var display_shinycolors = document.getElementsByClassName('shinycolors');
+    var display_valorant = document.getElementsByClassName('valorant');
     var display_othergame = document.getElementsByClassName('othergame');
     var display_talk = document.getElementsByClassName('talk');
     var display_durable_immediately = document.getElementsByClassName('durable_immediately');
@@ -44,6 +45,12 @@ document.addEventListener("DOMContentLoaded", function(){
         display_shinycolors = Array.from(display_shinycolors);
         for (var i = 0; i < display_shinycolors.length; i++) {
           display_shinycolors[i].style.display = "";
+        }
+        break;
+      case 'genre_valorant':
+        display_valorant = Array.from(display_valorant);
+        for (var i = 0; i < display_shinycolors.length; i++) {
+          display_valorant[i].style.display = "";
         }
         break;
       case 'genre_othergame':
