@@ -192,10 +192,16 @@ footer small {
   float: right;
 }
 
-.genre_checkbox {
+#genre_selbox {
   font-family: 'Noto Serif JP', serif;
   font-weight: 100;
-  font-size: 13px;
+  font-size: 15px;
+  padding: 5px 2px;
+}
+
+select, option{
+  background-color: #FAF6ED;
+  border: #B5A98F 2px solid;
 }
 
 .archive_blank {
