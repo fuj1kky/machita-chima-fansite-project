@@ -138,6 +138,12 @@ footer small {
   border-left: 12px solid #EDDDBB;
 }
 
+#archive .icon:before {
+  content: "";
+  padding-right: 10px;
+  border-left: 9px solid #EDDDBB;
+}
+
 #profile {
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
@@ -176,7 +182,8 @@ footer small {
 #archive h3 {
   font-family: 'Noto Serif JP', serif;
   font-weight: 130;
-  font-size: 15px;
+  font-size: 16px;
+  padding: 5px 0;
 }
 
 #archive .main {
