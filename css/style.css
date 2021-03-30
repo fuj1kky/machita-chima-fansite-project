@@ -98,7 +98,12 @@ footer small {
   font-family: 'Noto Serif JP', serif;
   font-weight: 150;
   font-size: 23px;
+  padding-top: 50px;
   padding-bottom: 10px;
+}
+
+#index p {
+  padding-top: 50px;
 }
 
 p {
@@ -240,7 +245,6 @@ p {
 #archive .sidebar {
   width: 250px;
   margin: 0 10px 0 30px;
-  padding-top: 165px;
   float: right;
 }
 
