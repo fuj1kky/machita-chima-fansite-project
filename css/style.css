@@ -8,7 +8,7 @@ body {
   line-height: 2;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6 ,li{
   margin-top: 0;
   font-family: 'Noto Serif JP', serif;
 }
@@ -81,6 +81,7 @@ footer {
   text-align: center;
   padding: 20px 0;
   background-color: #F7EFE0;
+  font-family: 'Noto Serif JP', serif;
 }
 
 footer small {
