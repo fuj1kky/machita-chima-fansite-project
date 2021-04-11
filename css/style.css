@@ -15,7 +15,6 @@ p, h1, h2, h3, h4, h5, h6 ,li{
 
 img {
   vertical-align: bottom;
-  pointer-events: none;
 }
 
 ul {
@@ -39,7 +38,7 @@ header {
 
 .logo {
   float: left;
-  margin-top: 40px;
+  margin-top: 55px;
   margin-left: 10px;
 }
 
@@ -178,6 +177,7 @@ p {
 
 #loading img {
   height: 30%;
+  pointer-events: none;
 }
 
 #profile {
@@ -213,6 +213,7 @@ p {
 #profile .right-content img {
   width: 400px;
   margin-right: 30px;
+  pointer-events: none;
 }
 
 #profile .activity {
