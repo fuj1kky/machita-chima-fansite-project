@@ -272,11 +272,12 @@ p {
 }
 
 #page_top{
+  display: none;
   width: 50px;
   height: 50px;
   position: fixed;
   right: 100px;
-  bottom: 50px;
+  bottom: 100px;
   background: #B5A98F;
   opacity: 0.6;
   border-radius: 50%;
