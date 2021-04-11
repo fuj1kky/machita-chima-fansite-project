@@ -9,6 +9,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      var h = $(window).height();
+      $('#loading_wrapper').css('display', 'none');
+      $('#is-loading ,#loading').height(h).css('display', 'block')
+    });
+
+    $(window).on('load', function () {
+      $('#is-loading').delay(1500).fadeOut(800);
+      $('#loading').delay(100).fadeOut(300);
+      $('#loading_wrapper').css('display', 'block');
+    });
+
+
+    $(function() {
+      setTimeout('stopload()', 10000);
+    });
+
+    function stopload() {
+      $('#loading_wrapper').css('display', 'block');
+      $('#is-loading').delay(1500).fadeOut(800);
+      $('#loading').delay(1200).fadeOut(300);
+    }
+  </script>
 </head>
 
 <body id="index">
@@ -58,31 +83,6 @@
     <small>Created, Designed by FU.<br>
   </footer>
   </div>
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script>
-    $(function() {
-      var h = $(window).height();
-      $('#loading_wrapper').css('display', 'none');
-      $('#is-loading ,#loading').height(h).css('display', 'block')
-    });
-
-    $(window).on('load', function () {
-      $('#is-loading').delay(900).fadeOut(800);
-      $('#loading').delay(600).fadeOut(300);
-      $('#loading_wrapper').css('display', 'block');
-    });
-
-
-    $(function() {
-      setTimeout('stopload()', 10000);
-    });
-
-    function stopload() {
-      $('#loading_wrapper').css('display', 'block');
-      $('#is-loading').delay(900).fadeOut(800);
-      $('#loading').delay(600).fadeOut(300);
-    }
-  </script>
 </body>
 
 </html>
