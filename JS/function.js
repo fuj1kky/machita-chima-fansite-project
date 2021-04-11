@@ -1,5 +1,4 @@
 
-
 document.addEventListener("DOMContentLoaded", function(){
 
   document.getElementById("genre_selbox").addEventListener('change',function(){

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="JS/jquery-3.6.0.min.js"></script>
   <script>
     $(function() {
       var h = $(window).height();
@@ -17,7 +17,7 @@
       $('#is-loading ,#loading').height(h).css('display', 'block')
     });
 
-    $(window).on('load', function () {
+    $(window).on('load', function() {
       $('#is-loading').delay(1500).fadeOut(800);
       $('#loading').delay(1200).fadeOut(300);
       $('#loading_wrapper').css('display', 'block');
@@ -39,8 +39,9 @@
 <body id="index">
   <div id="is-loading">
     <div id="loading">
-      <img src="img/loading.GIF" alt="loadingなう">
+      <img src="img/loading-min.GIF" alt="loadingなう">
     </div>
+    <div id="container"></div>
   </div>
   <!-- header開始 -->
   <header>
