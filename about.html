@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
   <script src="JS/jquery-3.6.0.min.js"></script>
   <script>
     $(function() {
@@ -31,6 +32,25 @@
       $('#is-loading').delay(1500).fadeOut(800);
       $('#loading').delay(1200).fadeOut(300);
     }
+  </script>
+  <script>
+    jQuery(function() {
+      var pagetop = $('#page_top');
+      pagetop.css('display', 'none');
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 500) { //100pxスクロールしたら表示
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function() {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 500); //0.5秒かけてトップへ移動
+        return false;
+      });
+    });
   </script>
 </head>
 
@@ -73,7 +93,7 @@
       <h2>注意事項</h2>
       <ul>
         <li>このサイトは、いちから株式会社様が策定する<a href="https://event.nijisanji.app/guidelines/">二次創作ガイドライン</a>に即して制作されています。また、掲載されているイラスト・写真の無断転載・無断使用を一切禁じます。</li>
-        <li>このサイトはあくまで非公式のファンサイトです。いちから株式会社様及びにじさんじプロジェクトとは一切関係ありません。従って、サイトに関する問い合わせをいちから株式会社様やその所属ライバー・各関係者に行うことはお辞めください。このサイトに関する問い合わせは全て製作者までお願いします。（下記「問い合わせ」参照）</li>
+        <li>このサイトはあくまで非公式のファンサイトです。いちから株式会社様及びにじさんじプロジェクトとは一切関係ありません。従って、サイトに関する問い合わせをいちから株式会社様やその所属ライバー・各関係者に行うことはお辞めください。このサイトに関する問い合わせは全て製作者までお願いします。（下記「製作者」のTwitterのDMからお願いします。）</li>
       </ul>
       <h2>関連リンク</h2>
       <ul>
@@ -82,11 +102,12 @@
       </ul>
       <h2>最後に</h2>
       <h2>製作者</h2>
-      <p>企画・デザイン・設計・制作・ヘッダー写真撮影:<a href="https://twitter.com/FUJ1P_"> FU(@FUJ1P_)</a><br>
-        イラスト（プロフィール立ち絵・ローディング画面SD絵）:
+      <p>企画・デザイン・設計・制作・ヘッダー写真撮影:<a href="https://twitter.com/FUJ1P_"> FU(@FUJ1P_)</a><br></p>
+      <h2> Special Thanks </h2>
+      <p>イラスト制作（プロフィール立ち絵・ローディング画面SD絵）：</p>
     </div>
+    <div id="page_top"><a href="#wrap"></a></div>
   </div>
-  <div class="archive_blank">
   </div>
   <footer>
     <small>Created, Designed by FU.<br>

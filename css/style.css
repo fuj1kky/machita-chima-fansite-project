@@ -190,6 +190,7 @@ p {
 
 #profile h2 {
   font-family: 'Noto Serif JP', serif;
+  font-weight: 150;
   padding-top: 50px;
   margin-bottom: 60px;
   border-bottom: 1px solid #B5A98F;
@@ -437,4 +438,9 @@ select, option{
   margin: 0;
   padding-top: 20px;
   font-weight: lighter;
+}
+
+#about ul {
+  margin-left: 23px;
+  padding-top: 15px;
 }
