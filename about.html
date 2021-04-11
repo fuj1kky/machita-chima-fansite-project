@@ -1,37 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>サンプルページ</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <!-- header開始 -->
-    <header>
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/logo.png" alt="Innocence.">
-        </a>
-      </div>
-      <nav>
-        <ul class="global_nav">
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="archive.html">Stream Archive</a></li>
-          <li><a href="songs.html">Songs</a></li>
-          <li><a href="information.html">Information</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrap">
-      <div class="content">
 
-      </div>
+<head>
+  <meta charset="utf-8">
+  <title>サンプルページ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="JS/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      var h = $(window).height();
+      $('#loading_wrapper').css('display', 'none');
+      $('#is-loading ,#loading').height(h).css('display', 'block')
+    });
+
+    $(window).on('load', function() {
+      $('#is-loading').delay(1500).fadeOut(800);
+      $('#loading').delay(1200).fadeOut(300);
+      $('#loading_wrapper').css('display', 'block');
+    });
+
+
+    $(function() {
+      setTimeout('stopload()', 10000);
+    });
+
+    function stopload() {
+      $('#loading_wrapper').css('display', 'block');
+      $('#is-loading').delay(1500).fadeOut(800);
+      $('#loading').delay(1200).fadeOut(300);
+    }
+  </script>
+</head>
+
+<body id="about">
+  <div id="is-loading">
+    <div id="loading">
+      <img src="img/loading-min.GIF" alt="loadingなう">
     </div>
-    <footer>
-      <small>Created, Designed by FU.<br>
-    </footer>
-  </body>
+  </div>
+  <!-- header開始 -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Innocence.">
+      </a>
+    </div>
+    <nav>
+      <ul class="global_nav">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="archive.html">Stream Archive</a></li>
+        <li><a href="songs.html">Songs</a></li>
+        <li><a href="information.html">Information</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="wrap">
+    <div class="content">
+      <h2>このサイトについて</h2>
+      <p>このサイトは、いちから株式会社にじさんじプロジェクトに所属するバーチャルライバー、町田ちまの活動支援を目的とした非公式ファンサイトです。配信アーカイブの閲覧を始めプロフィールや町田ちまに関する情報など、これまでも町田ちまを推している人はもちろん、これから知りたい！と思っている方の助けにもなればいいなと思い制作しました。</p>
+      <h2>サイトの機能</h2>
+      <h3 class="icon">Profile</h3>
+      <p>町田ちまの簡単なプロフィールを閲覧することができます。もっと知りたい…！と思った方はYoutubeかTwitterのリンクからどんな活動をしているか覗いてみましょう。</p>
+      <h3 class="icon">Stream Archive</h3>
+      <p>今まで行った生配信のアーカイブを見ることができます。このサイトから直接見ることもできます。配信ジャンル（製作者の独断ですが）での配信の絞り込みや、歌配信のセットリストも見ることができます。</p>
+      <h3 class="icon">Songs</h3>
+      <p>歌ってみた動画の一覧を見ることができます。初めての方はここから見てみるといいかもしれません。
+      <h3 class="icon">Information</h3>
+      <p>町田ちまに関する様々な情報をまとめています。随時更新の予定です。</p>
+      <h2>注意事項</h2>
+      <ul>
+        <li>このサイトは、いちから株式会社様が策定する<a href="https://event.nijisanji.app/guidelines/">二次創作ガイドライン</a>に即して制作されています。また、掲載されているイラスト・写真の無断転載・無断使用を一切禁じます。</li>
+        <li>このサイトはあくまで非公式のファンサイトです。いちから株式会社様及びにじさんじプロジェクトとは一切関係ありません。従って、サイトに関する問い合わせをいちから株式会社様やその所属ライバー・各関係者に行うことはお辞めください。このサイトに関する問い合わせは全て製作者までお願いします。（下記「問い合わせ」参照）</li>
+      </ul>
+      <h2>関連リンク</h2>
+      <ul>
+        <li><a href="https://www.nijisanji.jp/">にじさんじ　公式サイト</a></li>
+        <li><a href="https://www.ichikara.co.jp/">いちから株式会社:TOP</a></li>
+      </ul>
+      <h2>最後に</h2>
+      <h2>製作者</h2>
+      <p>企画・デザイン・設計・制作・ヘッダー写真撮影:<a href="https://twitter.com/FUJ1P_"> FU(@FUJ1P_)</a><br>
+        イラスト（プロフィール立ち絵・ローディング画面SD絵）:
+    </div>
+  </div>
+  <div class="archive_blank">
+  </div>
+  <footer>
+    <small>Created, Designed by FU.<br>
+  </footer>
+</body>
+
 </html>
