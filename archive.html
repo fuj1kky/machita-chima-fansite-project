@@ -12,6 +12,30 @@
   <script src="JS/function.js" type="text/javascript"></script>
   <script src="JS/jquery-3.6.0.min.js"></script>
   <script>
+    $(function() {
+      var h = $(window).height();
+      $('#loading_wrapper').css('display', 'none');
+      $('#is-loading ,#loading').height(h).css('display', 'block')
+    });
+
+    $(window).on('load', function() {
+      $('#is-loading').delay(1500).fadeOut(800);
+      $('#loading').delay(1200).fadeOut(300);
+      $('#loading_wrapper').css('display', 'block');
+    });
+
+
+    $(function() {
+      setTimeout('stopload()', 10000);
+    });
+
+    function stopload() {
+      $('#loading_wrapper').css('display', 'block');
+      $('#is-loading').delay(1500).fadeOut(800);
+      $('#loading').delay(1200).fadeOut(300);
+    }
+  </script>
+  <script>
     jQuery(function() {
       var pagetop = $('#page_top');
       pagetop.css('display', 'none');
@@ -33,6 +57,12 @@
 </head>
 
 <body id="archive">
+  <div id="is-loading">
+    <div id="loading">
+      <img src="img/loading-min.GIF" alt="loadingなう">
+    </div>
+    <div id="container"></div>
+  </div>
   <!-- header開始 -->
   <header>
     <div class="logo">
@@ -225,7 +255,7 @@
               <tr>
                 <td>旅立ちの日に</td>
                 <td>作詞：小嶋登　作曲：坂本浩美</td>
-                <td>3:28</td>
+                <td>58:20</td>
                 <td></td>
               </tr>
             </table>
