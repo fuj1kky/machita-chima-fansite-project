@@ -38,7 +38,7 @@ header {
 
 .logo {
   float: left;
-  margin-top: 55px;
+  margin-top: 60px;
   margin-left: 10px;
 }
 
@@ -412,6 +412,20 @@ select, option{
 .yt_play:hover::before { /* YouTubeアイコン */
   cursor: pointer;
   background-image:url(../img/yt_icon_rgb.png);
+}
+#songs {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+#songs h2 {
+  font-weight: 150;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #B5A98F;
 }
 
 #about {
