@@ -7,9 +7,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="JS/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      var h = $(window).height();
+      $('#loading_wrapper').css('display', 'none');
+      $('#is-loading ,#loading').height(h).css('display', 'block')
+    });
+
+    $(window).on('load', function() {
+      $('#is-loading').delay(1500).fadeOut(800);
+      $('#loading').delay(1200).fadeOut(300);
+      $('#loading_wrapper').css('display', 'block');
+    });
+
+
+    $(function() {
+      setTimeout('stopload()', 10000);
+    });
+
+    function stopload() {
+      $('#loading_wrapper').css('display', 'block');
+      $('#is-loading').delay(1500).fadeOut(800);
+      $('#loading').delay(1200).fadeOut(300);
+    }
+  </script>
 </head>
 
 <body id="contact">
+  <div id="is-loading">
+    <div id="loading">
+      <img src="img/loading-min.GIF" alt="loadingなう">
+    </div>
+  </div>
   <!-- header開始 -->
   <header>
     <div class="logo">
@@ -30,9 +60,9 @@
   <div id="wrap">
     <div class="content">
       <h2>問い合わせフォーム</h2>
-      <p>サイトに関する問い合わせはこちらから。</p>
+      <p>サイトに関する問い合わせはこちらから。<br>返信が必要だと判断した場合は、記載していただいたメールアドレスに返信をさせていただきます。メールアドレスを始めとした個人情報は厳正に取り扱いますが、極力個人情報を含む内容は送らないようにしてください。また、管理人のTwitterのDMでも問い合わせを受け付けています。</p>
       <div class="form">
-        <form name="contact" method="post" data-netlify-recaptcha="true" netlify>
+        <form name="contact" method="post" data-netlify-recaptcha="true" action="/success.html" netlify>
           <dl class="">
             <dt><span class="required">お名前（ニックネームでも可）</span></dt>
             <dd><input type="text" name="name" class="name" required></dd>
@@ -40,7 +70,7 @@
             <dd><input type="email" name="email" class="email" required> </dd>
             <dt><span class="required">メッセージ</span></dt>
             <dd><textarea name="message" class="message" required></textarea></dd>
-            <div data-netlify-recaptcha="true"></div>
+            <div data-netlify-recaptcha="true" class="recaptcha"></div>
           </dl>
           <button type="submit" class="submit_btn">送信</button>
           <p>「 <span class="required"></span> 」のついている項目は必須項目です。</p>
