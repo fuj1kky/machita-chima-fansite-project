@@ -459,3 +459,82 @@ select, option{
   margin-left: 23px;
   padding-top: 15px;
 }
+
+#contact {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  font-family: 'Noto Serif JP', serif;
+}
+
+#contact .content {
+  padding-bottom: 10px;
+}
+
+#contact h2 {
+  font-weight: 150;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #B5A98F;
+}
+
+#contact .form dl dt {
+  width: 300px;
+  font-size: 15px;
+  padding: 10px 0;
+  float: left;
+  clear: both;
+}
+
+#contact .form dl dd {
+  font-size: 15px;
+  padding: 10px 0;
+}
+
+#contact .form .name {
+  width: 350px;
+  height: 30px;
+}
+
+#contact .form .email {
+  width: 350px;
+  height: 30px;
+}
+
+#contact .form .message {
+  width: 500px;
+  height: 150px;
+}
+
+#contact .form .submit_btn {
+  background-color: #B5A98F;
+  color: #ffffff;
+  font-size: 15px;
+  width: 100px;
+  display: block;
+  /* display: ボックスの表示形式を指定する aはインライン要素なのでブロックレベル要素に変える必要がある*/
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 3px solid #B5A98F;
+  margin-left: 300px;
+}
+
+#contact .form .submit_btn:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #B5A98F;
+  cursor: pointer;
+}
+
+#contact .form .required:after {
+  content: " * ";
+  color: #ff0000;
+}
+
+#contact .form p {
+  margin-left: 300px;
+  padding-bottom: 50px;
+}
