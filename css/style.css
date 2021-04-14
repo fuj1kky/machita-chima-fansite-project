@@ -563,9 +563,9 @@ select, option{
   border-bottom: 1px solid #B5A98F;
 }
 
-#success .success_img {
+#success .success_div {
   text-align: center;
-  padding: 85px 0;
+  padding: 33px 0;
 }
 
 #success .success_img img{
