@@ -32,19 +32,15 @@
       <h2>問い合わせフォーム</h2>
       <p>サイトに関する問い合わせはこちらから。</p>
       <div class="form">
-        <form name="contact" method="post" netlify>
+        <form name="contact" method="post" data-netlify-recaptcha="true" netlify>
           <dl class="">
             <dt><span class="required">お名前（ニックネームでも可）</span></dt>
             <dd><input type="text" name="name" class="name" required></dd>
             <dt><span class="required">メールアドレス</span></dt>
             <dd><input type="email" name="email" class="email" required> </dd>
-            <dt><span class="required">返信の有無</span></dt>
-            <dd>
-              <input type="radio" name="responce" value="res_yes">必要あり（質問に対する回答が必要な場合はこちらを選択してください）
-              <input type="radio" name="responce" value="res_no">必要なし
-            </dd>
             <dt><span class="required">メッセージ</span></dt>
             <dd><textarea name="message" class="message" required></textarea></dd>
+            <div data-netlify-recaptcha="true"></div>
           </dl>
           <button type="submit" class="submit_btn">送信</button>
           <p>「 <span class="required"></span> 」のついている項目は必須項目です。</p>
