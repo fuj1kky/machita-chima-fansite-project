@@ -339,7 +339,7 @@ p {
   text-align: center;
 }
 
-table tr:nth-child(odd){
+#archive table tr:nth-child(odd){
   background-color: #FAF6ED;
 }
 
@@ -420,6 +420,7 @@ select, option{
   background-position: center top;
   background-attachment: fixed;
   background-size: 100% auto;
+  font-family: 'Noto Serif JP', serif;
 }
 
 #songs h2 {
@@ -427,6 +428,48 @@ select, option{
   padding-top: 50px;
   margin-bottom: 20px;
   border-bottom: 1px solid #B5A98F;
+}
+
+#songs h3 {
+  clear: both;
+  font-weight: 130;
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+#songs #wrap ul {
+  margin-left: 23px;
+  margin-bottom: 30px;
+}
+
+
+#songs .content .youtube_content {
+  float: left;
+  margin-bottom: 20px;
+}
+
+#songs .content table {
+  float: right;
+  width: 400px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 50px;
+  font-size: 13px;
+}
+
+#songs table tr {
+  border-bottom: 1px solid #B5A98F;
+
+}
+
+#songs table th {
+  text-align: left;
+  width: 40%;
+}
+
+#songs table td {
+  text-align: left;
+  width: 60%;
 }
 
 #about {
@@ -455,13 +498,13 @@ select, option{
   font-weight: lighter;
 }
 
-#about ul {
+#about #wrap ul {
   margin-left: 23px;
   padding-top: 15px;
 }
 
 #contact {
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg2.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
