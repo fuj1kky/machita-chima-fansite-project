@@ -9,49 +9,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
   <script src="JS/jquery-3.6.0.min.js"></script>
-  <script>
-    $(function() {
-      var h = $(window).height();
-      $('#loading_wrapper').css('display', 'none');
-      $('#is-loading ,#loading').height(h).css('display', 'block')
-    });
-
-    $(window).on('load', function() {
-      $('#is-loading').delay(1500).fadeOut(800);
-      $('#loading').delay(1200).fadeOut(300);
-      $('#loading_wrapper').css('display', 'block');
-    });
-
-
-    $(function() {
-      setTimeout('stopload()', 10000);
-    });
-
-    function stopload() {
-      $('#loading_wrapper').css('display', 'block');
-      $('#is-loading').delay(1500).fadeOut(800);
-      $('#loading').delay(1200).fadeOut(300);
-    }
-  </script>
-  <script>
-    jQuery(function() {
-      var pagetop = $('#page_top');
-      pagetop.css('display', 'none');
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 500) { //100pxスクロールしたら表示
-          pagetop.fadeIn();
-        } else {
-          pagetop.fadeOut();
-        }
-      });
-      pagetop.click(function() {
-        $('body,html').animate({
-          scrollTop: 0
-        }, 500); //0.5秒かけてトップへ移動
-        return false;
-      });
-    });
-  </script>
+  <script src="JS/loading.js" type="text/javascript"></script>
+  <script src="JS/pagetop_button.js" type="text/javascript"></script>
 </head>
 
 <body id="about">

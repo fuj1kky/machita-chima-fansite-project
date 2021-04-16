@@ -442,6 +442,9 @@ select, option{
   margin-bottom: 30px;
 }
 
+.songs_content p {
+  margin-bottom: 0;
+}
 
 #songs .content .youtube_content {
   float: left;
