@@ -369,6 +369,9 @@ summary {
   margin-bottom: 0;
 }
 
+#archive .content a:link, a:visited{
+  color: #2C76A1;
+}
 
 #genre_selbox {
   font-family: 'Noto Serif JP', serif;
