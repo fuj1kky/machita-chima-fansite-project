@@ -83,8 +83,13 @@ footer {
   background-color: #F7EFE0;
   font-family: 'Noto Serif JP', serif;
 }
+
 footer small {
   font-size: 13px;
+}
+
+footer small a:link, a:visited{
+  color: #2C76A1;
 }
 
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
@@ -100,12 +105,12 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   background-size: 100% auto;
 }
 
-#index h2 {
+h2 {
   font-family: 'Noto Serif JP', serif;
   font-weight: 150;
-  font-size: 23px;
   padding-top: 50px;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #B5A98F;
 }
 
 #index p {
@@ -119,6 +124,7 @@ p {
 
 .left-content {
   float: left;
+  margin-bottom: 50px;
 }
 
 .right-content {
@@ -140,7 +146,7 @@ p {
 }
 
 #index .content {
-  padding-bottom: 640px;
+  padding-bottom: 690px;
 }
 
 .icon:before {
@@ -193,13 +199,6 @@ p {
   background-size: 100% auto;
 }
 
-#profile h2 {
-  font-family: 'Noto Serif JP', serif;
-  font-weight: 150;
-  padding-top: 50px;
-  margin-bottom: 60px;
-  border-bottom: 1px solid #B5A98F;
-}
 
 #profile h3 {
   font-family: 'Noto Serif JP', serif;
@@ -260,13 +259,6 @@ p {
   background-attachment: fixed;
   background-size: 100% auto;
   font-family: 'Noto Serif JP', serif;
-}
-
-#archive h2 {
-  font-weight: 150;
-  padding-top: 50px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #B5A98F;
 }
 
 #archive h3 {
@@ -442,12 +434,6 @@ select, option{
   font-family: 'Noto Serif JP', serif;
 }
 
-#songs h2 {
-  font-weight: 150;
-  padding-top: 50px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #B5A98F;
-}
 
 #songs h3 {
   clear: both;
@@ -507,12 +493,6 @@ select, option{
   font-family: 'Noto Serif JP', serif;
 }
 
-#information h2 {
-  font-weight: 150;
-  padding-top: 50px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #B5A98F;
-}
 
 #information #wrap .content .container {
   display: grid;
@@ -527,6 +507,7 @@ select, option{
   list-style: none;
   position:relative;
 }
+
 #information #wrap .content .container li .mask {
 	width: 100%;
 	height:	100%;
@@ -543,6 +524,10 @@ select, option{
 	opacity: 1;
 }
 
+#information #wrap .content .container li .mask figcaption {
+  color: #ffffff;
+}
+
 
 #information #wrap .content .container li figure {
   margin: 0;
@@ -556,7 +541,7 @@ select, option{
   object-fit: cover;
 }
 
-#information .content .container li .tags a {
+.tags p {
   transition: 0.5s;
   display: inline-block;
   width: auto;
@@ -618,6 +603,52 @@ select, option{
     color: #FFFFFF;
 }
 
+#info_detail {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  font-family: 'Noto Serif JP', serif;
+}
+
+#info_detail h2 {
+  margin-bottom: 0;
+}
+#info_detail h3 {
+  font-weight: 130;
+  font-size: 22px;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+
+
+#info_detail .tags p{
+  margin-bottom: 40px;
+  margin-left: 0;
+}
+
+#info_detail .info-main-content li {
+  margin-left: 27px;
+}
+
+#info_detail .info_grid {
+  margin: 40px 0;
+  text-align: center;
+}
+
+#info_detail .info_grid ul {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#info_detail .info_grid li {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
 #about {
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
@@ -630,12 +661,6 @@ select, option{
   padding-bottom: 10px;
 }
 
-#about h2 {
-  font-weight: 150;
-  padding-top: 50px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #B5A98F;
-}
 
 #about h3 {
   font-size: 18px;
