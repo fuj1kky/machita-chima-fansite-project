@@ -149,6 +149,30 @@ p {
   padding-bottom: 690px;
 }
 
+#index .toabout-btn {
+  transition: 0.4s;
+  font-size: 15px;
+  font-family: 'Noto Serif JP', serif;
+  color: #000000;
+  width: 400px;
+  border: 2px solid #EDDDBB;
+  text-align: center;
+  padding: 10px 0;
+}
+#index .main-content a{
+  text-decoration: none;
+}
+
+#index .main-content a:hover{
+  text-decoration: none;
+}
+
+#index .toabout-btn:hover {
+  transition: 0.4s;
+  background-color: #EDDDBB;
+  color: #ffffff;
+}
+
 .icon:before {
   content: "";
   padding-right: 15px;
@@ -743,12 +767,12 @@ select, option{
 }
 
 #contact .form .submit_btn {
+  transition: 0.4s;
   background-color: #B5A98F;
   color: #ffffff;
   font-size: 15px;
   width: 100px;
   display: block;
-  /* display: ボックスの表示形式を指定する aはインライン要素なのでブロックレベル要素に変える必要がある*/
   text-align: center;
   line-height: 30px;
   border-radius: 5px;
@@ -757,6 +781,7 @@ select, option{
 }
 
 #contact .form .submit_btn:hover {
+  transition: 0.4s;
   text-decoration: none;
   background-color: #ffffff;
   color: #B5A98F;
