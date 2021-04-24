@@ -1,7 +1,6 @@
+document.addEventListener("DOMContentLoaded", function() {
 
-document.addEventListener("DOMContentLoaded", function(){
-
-  document.getElementById("genre_selbox").addEventListener('change',function(){
+  document.getElementById("genre_selbox").addEventListener('change', function() {
 
     var selboxvalue = document.getElementById("genre_selbox").value;
     var display_all = document.getElementsByClassName('archive_content');
@@ -17,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var display_other = document.getElementsByClassName('other');
 
     display_all = Array.from(display_all);
-    for(var i = 0; i < display_all.length; i++) {
+    for (var i = 0; i < display_all.length; i++) {
       display_all[i].style.display = "none";
     }
 
@@ -90,11 +89,64 @@ document.addEventListener("DOMContentLoaded", function(){
         break;
       default:
 
-      }
+    }
 
-
-
-
-    });
 
   });
+
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("genre_selbox_info").addEventListener('change', function() {
+
+    var selboxvalueinfo = document.getElementById("genre_selbox_info").value;
+    var display_all = document.getElementsByClassName('info_content');
+    var display_official = document.getElementsByClassName('official');
+    var display_goods = document.getElementsByClassName('goods');
+    var display_appearance = document.getElementsByClassName('appearance');
+    var display_voice = document.getElementsByClassName('voice');
+
+    display_all = Array.from(display_all);
+    for (var i = 0; i < display_all.length; i++) {
+      display_all[i].style.display = "none";
+    }
+
+    switch (selboxvalueinfo) {
+      case 'genre_all':
+        display_all = Array.from(display_all);
+        for (var i = 0; i < display_all.length; i++) {
+          display_all[i].style.display = "";
+        }
+        break;
+      case 'genre_official':
+        display_official = Array.from(display_official);
+        for (var i = 0; i < display_official.length; i++) {
+          display_official[i].style.display = "";
+        }
+        break;
+      case 'genre_goods':
+        display_goods = Array.from(display_goods);
+        for (var i = 0; i < display_goods.length; i++) {
+          display_goods[i].style.display = "";
+        }
+        break;
+      case 'genre_appearance':
+        display_appearance = Array.from(display_appearance);
+        for (var i = 0; i < display_appearance.length; i++) {
+          display_appearance[i].style.display = "";
+        }
+        break;
+      case 'genre_voice':
+        display_voice = Array.from(display_voice);
+        for (var i = 0; i < display_voice.length; i++) {
+          display_voice[i].style.display = "";
+        }
+        break;
+      default:
+
+    }
+
+
+  });
+
+});

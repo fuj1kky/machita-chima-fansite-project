@@ -651,6 +651,19 @@ select, option{
   margin-bottom: 40px;
 }
 
+ .back_to_information_page {
+  width: 200px;
+  margin: 0 auto;
+}
+
+#genre_selbox_info {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 100;
+  font-size: 15px;
+  padding: 5px 2px;
+  margin: 20px 10px;
+}
+
 
 #about {
   background-image: url(../img/bg.png);

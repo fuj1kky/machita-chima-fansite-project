@@ -11,6 +11,7 @@
   <script src="JS/loading.js" type="text/javascript"></script>
   <script src="JS/pagetop_button.js" type="text/javascript"></script>
   <script type="text/javascript" src="JS/paginathing.min.js"></script>
+  <script src="JS/function.js" type="text/javascript"></script>
   <script type="text/javascript">
     jQuery(document).ready(function($) {
       $('.list-group').paginathing({
@@ -51,8 +52,35 @@
     <div class="content">
       <h2>インフォメーション</h2>
       <p>町田ちまに関連する様々な情報を掲載しています。</p>
+      <select id="genre_selbox_info">
+        <option value="genre_all"> 全てのお知らせ </option><br>
+        <option value="genre_official"> 公式 </option><br>
+        <option value="genre_voice"> ボイス </option><br>
+        <option value="genre_goods"> グッズ </option><br>
+        <option value="genre_appearance"> 出演情報 </option><br>
+      </select>
       <ul class="container list-group">
-        <li>
+        <li class="info_content voice">
+          <figure>
+            <img src="img/information/voice_outdoor.jpeg" alt="">
+            <a href="info/voice/000006.html">
+              <div class="mask">
+                <figcaption>
+                  <div class="tags">
+                    <p>ボイス</p>
+                  </div>
+                  <div class="date">
+                    <time>2021.04.23</time>
+                  </div>
+                  <div class="capture">
+                    <p>GWボイス&amp;アウトドアボイス 発売決定！</p>
+                  </div>
+                </figcaption>
+              </div>
+            </a>
+          </figure>
+        </li>
+        <li class="info_content appearance">
           <figure>
             <img src="img/information/nijiawa.jpeg" alt="">
             <a href="info/appearance/000005.html">
@@ -72,7 +100,7 @@
             </a>
           </figure>
         </li>
-        <li>
+        <li class="info_content goods">
           <figure>
             <img src="img/information/sousakubook.jpeg" alt="">
             <a href="info/goods/000004.html">
@@ -92,7 +120,7 @@
             </a>
           </figure>
         </li>
-        <li>
+        <li class="info_content official">
           <figure>
             <img src="img/information/palette.jpeg" alt="">
             <a href="info/official/000003.html">
@@ -112,7 +140,7 @@
             </a>
           </figure>
         </li>
-        <li>
+        <li class="info_content goods">
           <figure>
             <img src="img/information/goods.jpeg" alt="">
             <a href="info/goods/000002.html">
@@ -132,7 +160,7 @@
             </a>
           </figure>
         </li>
-        <li>
+        <li class="info_content official">
           <figure>
             <img src="img/information/prismaticcolors.jpeg" alt="">
             <a href="info/official/000001.html">
