@@ -714,6 +714,9 @@ select, option{
   padding-top: 15px;
 }
 
+#about .content a:link, a:visited {
+  color: #2C76A1;
+}
 #contact {
   background-image: url(../img/bg2.png);
   background-repeat: no-repeat;

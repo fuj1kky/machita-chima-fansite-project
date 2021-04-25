@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var display_othergame = document.getElementsByClassName('othergame');
     var display_talk = document.getElementsByClassName('talk');
     var display_durable_immediately = document.getElementsByClassName('durable_immediately');
+    var display_anniversary = document.getElementsByClassName('anniversary');
     var display_collaboration = document.getElementsByClassName('collaboration');
     var display_newcostume = document.getElementsByClassName('newcostume');
     var display_other = document.getElementsByClassName('other');
@@ -67,6 +68,12 @@ document.addEventListener("DOMContentLoaded", function() {
         display_durable_immediately = Array.from(display_durable_immediately);
         for (var i = 0; i < display_durable_immediately.length; i++) {
           display_durable_immediately[i].style.display = "";
+        }
+        break;
+      case 'genre_anniversary':
+        display_anniversary = Array.from(display_anniversary);
+        for (var i = 0; i < display_anniversary.length; i++) {
+          display_anniversary[i].style.display = "";
         }
         break;
       case 'genre_collaboration':
