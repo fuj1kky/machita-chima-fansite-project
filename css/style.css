@@ -123,6 +123,7 @@ p {
 }
 
 .left-content {
+  clear: both;
   float: left;
   margin-bottom: 50px;
 }
@@ -150,6 +151,7 @@ p {
 }
 
 #index .toabout-btn {
+  float: left;;
   transition: 0.4s;
   font-size: 15px;
   font-family: 'Noto Serif JP', serif;
