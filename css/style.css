@@ -147,11 +147,11 @@ p {
 }
 
 #index .content {
-  padding-bottom: 690px;
+  padding-bottom: 740px;
 }
 
 #index .toabout-btn {
-  float: left;;
+  float: left;
   transition: 0.4s;
   font-size: 15px;
   font-family: 'Noto Serif JP', serif;
