@@ -228,12 +228,13 @@ p {
 
 #profile h3 {
   font-family: 'Noto Serif JP', serif;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 #profile h4 {
   font-family: 'Noto Serif JP', serif;
   padding-top: 30px;
+  font-weight: 350;
 }
 
 #profile .left-content {
