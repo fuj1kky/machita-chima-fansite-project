@@ -545,9 +545,9 @@ select, option{
 	top: 0;
 	left: 0;
 	opacity: 0;
-	background-color:	rgba(0,0,0,0.4);
-	-webkit-transition:	all 0.2s ease;
-	transition:		all 0.2s ease;
+	background-color:	rgba(0,0,0,0.6);
+	-webkit-transition:	all 0.3s ease;
+	transition:		all 0.3s ease;
 }
 
 #information #wrap .content .container li:hover .mask {
@@ -660,6 +660,10 @@ select, option{
 
 #info_detail .info-main-content li {
   margin-left: 27px;
+}
+
+#info_detail .info-main-content  a {
+  color: #2C76A1;
 }
 
 #info_detail .info_grid {
