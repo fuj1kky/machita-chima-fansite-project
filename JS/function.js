@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
-  document.getElementById("genre_selbox").addEventListener('change', function() {
+  document.getElementById("genre_selbox").addEventListener('change', function () {
 
     var selboxvalue = document.getElementById("genre_selbox").value;
     var display_all = document.getElementsByClassName('archive_content');
@@ -103,8 +103,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("genre_selbox_info").addEventListener('change', function() {
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("genre_selbox_info").addEventListener('change', function () {
 
     var selboxvalueinfo = document.getElementById("genre_selbox_info").value;
     var display_all = document.getElementsByClassName('info_content');
@@ -112,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var display_goods = document.getElementsByClassName('goods');
     var display_appearance = document.getElementsByClassName('appearance');
     var display_voice = document.getElementsByClassName('voice');
+    var display_music = document.getElementsByClassName('music');
 
     display_all = Array.from(display_all);
     for (var i = 0; i < display_all.length; i++) {
@@ -147,6 +148,11 @@ document.addEventListener("DOMContentLoaded", function() {
         display_voice = Array.from(display_voice);
         for (var i = 0; i < display_voice.length; i++) {
           display_voice[i].style.display = "";
+        }
+      case 'genre_music':
+        display_music = Array.from(display_music);
+        for (var i = 0; i < display_music.length; i++) {
+          display_music[i].style.display = "";
         }
         break;
       default:
