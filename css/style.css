@@ -3,14 +3,22 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 18px;
   line-height: 2;
+  min-width: 980px;
 }
 
-p, h1, h2, h3, h4, h5, h6 ,li{
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
   margin-top: 0;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
 }
 
 img {
@@ -56,7 +64,7 @@ header {
 
 .global_nav li a {
   color: #000000;
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
 }
 
 .global_nav li a:hover {
@@ -80,20 +88,23 @@ header {
 footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #F7EFE0;
-  font-family: 'Noto Serif JP', serif;
+  background-color: #f7efe0;
+  font-family: "Noto Serif JP", serif;
 }
 
 footer small {
   font-size: 13px;
 }
 
-footer small a:link, a:visited{
-  color: #2C76A1;
+footer small a:link,
+a:visited {
+  color: #2c76a1;
 }
 
-input[type=text]:focus, input[type=email]:focus, textarea:focus {
-  border: 2px solid #FFBDC1;
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 2px solid #ffbdc1;
   outline: 0;
 }
 
@@ -106,11 +117,11 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 }
 
 h2 {
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   font-weight: 150;
   padding-top: 50px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #B5A98F;
+  border-bottom: 1px solid #b5a98f;
 }
 
 #index p {
@@ -154,67 +165,37 @@ p {
   float: left;
   transition: 0.4s;
   font-size: 15px;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   color: #000000;
   width: 400px;
-  border: 2px solid #EDDDBB;
+  border: 2px solid #edddbb;
   text-align: center;
   padding: 10px 0;
 }
-#index .main-content a{
+#index .main-content a {
   text-decoration: none;
 }
 
-#index .main-content a:hover{
+#index .main-content a:hover {
   text-decoration: none;
 }
 
 #index .toabout-btn:hover {
   transition: 0.4s;
-  background-color: #EDDDBB;
+  background-color: #edddbb;
   color: #ffffff;
 }
 
 .icon:before {
   content: "";
   padding-right: 15px;
-  border-left: 12px solid #EDDDBB;
+  border-left: 12px solid #edddbb;
 }
 
 #archive .icon:before {
   content: "";
   padding-right: 10px;
-  border-left: 9px solid #EDDDBB;
-}
-
-#is-loading {
- display: block;
- position: fixed;
- width: 100%;
- height: 100%;
- top: 0px;
- left: 0px;
- background: #FFF;
- z-index: 8;
-}
-
-#loading {
- display: none;
- position: fixed;
- top: 50%;
- left: 50%;
- width: 200px;
- height: 200px;
- margin-top: -100px;
- margin-left: -160px;
- text-align: center;
- color: #fff;
- z-index: 9;
-}
-
-#loading img {
-  height: 30%;
-  pointer-events: none;
+  border-left: 9px solid #edddbb;
 }
 
 #profile {
@@ -225,14 +206,13 @@ p {
   background-size: 100% auto;
 }
 
-
 #profile h3 {
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   font-weight: 350;
 }
 
 #profile h4 {
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   padding-top: 30px;
   font-weight: 350;
 }
@@ -259,7 +239,7 @@ p {
 
 #profile .activity img {
   height: 50px;
-  margin-left: 20px
+  margin-left: 20px;
 }
 
 #profile .activity img:hover {
@@ -271,8 +251,9 @@ p {
   padding: 0;
 }
 
-#profile .content a:link, a:visited{
-  color: #2C76A1;
+#profile .content a:link,
+a:visited {
+  color: #2c76a1;
 }
 
 #profile .hashtag ul {
@@ -285,7 +266,7 @@ p {
   background-position: center top;
   background-attachment: fixed;
   background-size: 100% auto;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
 }
 
 #archive h3 {
@@ -300,7 +281,8 @@ p {
   padding: 5px 0;
 }
 
-#archive p, li  {
+#archive p,
+li {
   font-weight: 150;
   font-size: 15px;
 }
@@ -312,28 +294,28 @@ p {
   margin-left: 20px;
 }
 
-#page_top{
+#page_top {
   display: none;
   width: 50px;
   height: 50px;
   position: fixed;
   right: 100px;
   bottom: 100px;
-  background: #B5A98F;
+  background: #b5a98f;
   opacity: 0.6;
   border-radius: 50%;
 }
-#page_top a{
+#page_top a {
   position: relative;
   display: block;
   width: 50px;
   height: 50px;
   text-decoration: none;
 }
-#page_top a::before{
-  font-family: 'Font Awesome 5 Free';
+#page_top a::before {
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: '\f102';
+  content: "\f102";
   font-size: 30px;
   color: #fff;
   position: absolute;
@@ -345,7 +327,6 @@ p {
   left: 0;
   margin: auto;
   text-align: center;
-
 }
 
 #archive .main {
@@ -375,19 +356,20 @@ p {
   font-size: 14px;
 }
 
-#archive table th, table td {
+#archive table th,
+table td {
   padding: 5px 0;
   text-align: center;
 }
 
-#archive table tr:nth-child(odd){
-  background-color: #FAF6ED;
+#archive table tr:nth-child(odd) {
+  background-color: #faf6ed;
 }
 
 details {
   font-size: 14px;
   margin-left: 27px;
-  transition: .3s;
+  transition: 0.3s;
   margin-bottom: 20px;
 }
 
@@ -399,20 +381,22 @@ summary {
   margin-bottom: 0;
 }
 
-#archive .content a:link, a:visited{
-  color: #2C76A1;
+#archive .content a:link,
+a:visited {
+  color: #2c76a1;
 }
 
 #genre_selbox {
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   font-weight: 100;
   font-size: 15px;
   padding: 5px 2px;
 }
 
-select, option{
-  background-color: #FAF6ED;
-  border: #B5A98F 2px solid;
+select,
+option {
+  background-color: #faf6ed;
+  border: #b5a98f 2px solid;
 }
 
 .archive_blank {
@@ -425,22 +409,23 @@ select, option{
   padding-left: 27px;
 }
 
-  /*
+/*
   YouTube 初回表示軽量化スクリプト
   Copyright Rectus Inc, 2020/05/11 Ver 0.04
   https://www.rectus.co.jp/
  */
 
 .yt {
-  position:relative;
+  position: relative;
 }
 .yt_play {
   position: absolute;
 }
 .yt_play:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
-.yt_play::before { /* YouTubeアイコン */
+.yt_play::before {
+  /* YouTubeアイコン */
   position: absolute;
   background: url(../img/yt_icon_mono_light.png);
   content: "";
@@ -449,14 +434,15 @@ select, option{
   height: 50px;
   top: 50%;
   left: 50%;
-  transform : translate(-50%,-50%);
-  opacity: .90;
-  transition:.5s;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+  transition: 0.5s;
 }
 
-.yt_play:hover::before { /* YouTubeアイコン */
+.yt_play:hover::before {
+  /* YouTubeアイコン */
   cursor: pointer;
-  background-image:url(../img/yt_icon_rgb.png);
+  background-image: url(../img/yt_icon_rgb.png);
 }
 #songs {
   background-image: url(../img/bg.png);
@@ -464,9 +450,8 @@ select, option{
   background-position: center top;
   background-attachment: fixed;
   background-size: 100% auto;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
 }
-
 
 #songs h3 {
   clear: both;
@@ -499,8 +484,7 @@ select, option{
 }
 
 #songs table tr {
-  border-bottom: 1px solid #B5A98F;
-
+  border-bottom: 1px solid #b5a98f;
 }
 
 #songs table th {
@@ -513,8 +497,9 @@ select, option{
   width: 60%;
 }
 
-#songs .content a:link, a:visited{
-  color: #2C76A1;
+#songs .content a:link,
+a:visited {
+  color: #2c76a1;
 }
 
 #information {
@@ -523,9 +508,8 @@ select, option{
   background-position: center top;
   background-attachment: fixed;
   background-size: 100% auto;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
 }
-
 
 #information #wrap .content .container {
   display: grid;
@@ -538,29 +522,28 @@ select, option{
 
 #information #wrap .content .container li {
   list-style: none;
-  position:relative;
+  position: relative;
 }
 
 #information #wrap .content .container li .mask {
-	width: 100%;
-	height:	100%;
-	position:	absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	background-color:	rgba(0,0,0,0.6);
-	-webkit-transition:	all 0.3s ease;
-	transition:		all 0.3s ease;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #information #wrap .content .container li:hover .mask {
-	opacity: 1;
+  opacity: 1;
 }
 
 #information #wrap .content .container li .mask figcaption {
   color: #ffffff;
 }
-
 
 #information #wrap .content .container li figure {
   margin: 0;
@@ -578,10 +561,10 @@ select, option{
   transition: 0.5s;
   display: inline-block;
   width: auto;
-  background-color: #FFA199;
+  background-color: #ffa199;
   color: #ffffff;
   border-radius: 3px;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   padding: 0 10px;
   margin: 10px;
   margin-top: 20px;
@@ -590,7 +573,7 @@ select, option{
 
 #information .content .container li .tags a:hover {
   transition: 0.5s;
-  background-color: #FFA199;
+  background-color: #ffa199;
   color: #ffffff;
 }
 
@@ -603,37 +586,37 @@ select, option{
   margin: 0 10px;
 }
 
-.pagination{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
-.pagination li{
-    margin: 5px;
-    border: 2px solid #B5A98F;
-    height: 50px;
-    width: 50px;
-    text-align: center;
+.pagination li {
+  margin: 5px;
+  border: 2px solid #b5a98f;
+  height: 50px;
+  width: 50px;
+  text-align: center;
 }
 
-.pagination a{
-    display: block;
-    text-decoration: none;
-    color: #B5A98F;
-    padding: 10px;
+.pagination a {
+  display: block;
+  text-decoration: none;
+  color: #b5a98f;
+  padding: 10px;
 }
 
-.pagination a:hover{
+.pagination a:hover {
   transition: 0.6s;
-    color: #FFFFFF;
-    background-color: #B5A98F;
+  color: #ffffff;
+  background-color: #b5a98f;
 }
 
-.active{
-    background-color: #2C76A1;
-    color: #FFFFFF;
+.active {
+  background-color: #2c76a1;
+  color: #ffffff;
 }
 
 #info_detail {
@@ -642,7 +625,7 @@ select, option{
   background-position: center top;
   background-attachment: fixed;
   background-size: 100% auto;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
 }
 
 #info_detail h2 {
@@ -655,8 +638,7 @@ select, option{
   margin-bottom: 0;
 }
 
-
-#info_detail .tags p{
+#info_detail .tags p {
   margin-bottom: 40px;
   margin-left: 0;
 }
@@ -665,8 +647,8 @@ select, option{
   margin-left: 27px;
 }
 
-#info_detail .info-main-content  a {
-  color: #2C76A1;
+#info_detail .info-main-content a {
+  color: #2c76a1;
 }
 
 #info_detail .info_grid {
@@ -685,19 +667,18 @@ select, option{
   margin-bottom: 40px;
 }
 
- .back_to_information_page {
+.back_to_information_page {
   width: 200px;
   margin: 0 auto;
 }
 
 #genre_selbox_info {
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   font-weight: 100;
   font-size: 15px;
   padding: 5px 2px;
   margin: 20px 10px;
 }
-
 
 #about {
   background-image: url(../img/bg.png);
@@ -711,7 +692,6 @@ select, option{
   padding-bottom: 10px;
 }
 
-
 #about h3 {
   font-size: 18px;
   margin: 0;
@@ -724,8 +704,9 @@ select, option{
   padding-top: 15px;
 }
 
-#about .content a:link, a:visited {
-  color: #2C76A1;
+#about .content a:link,
+a:visited {
+  color: #2c76a1;
 }
 #contact {
   background-image: url(../img/bg2.png);
@@ -733,7 +714,7 @@ select, option{
   background-position: center top;
   background-attachment: fixed;
   background-size: 100% auto;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
 }
 
 #contact .content {
@@ -744,7 +725,7 @@ select, option{
   font-weight: 150;
   padding-top: 50px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #B5A98F;
+  border-bottom: 1px solid #b5a98f;
 }
 
 #contact .form {
@@ -781,7 +762,7 @@ select, option{
 
 #contact .form .submit_btn {
   transition: 0.4s;
-  background-color: #B5A98F;
+  background-color: #b5a98f;
   color: #ffffff;
   font-size: 15px;
   width: 100px;
@@ -789,7 +770,7 @@ select, option{
   text-align: center;
   line-height: 30px;
   border-radius: 5px;
-  border: 3px solid #B5A98F;
+  border: 3px solid #b5a98f;
   margin-left: 300px;
 }
 
@@ -797,7 +778,7 @@ select, option{
   transition: 0.4s;
   text-decoration: none;
   background-color: #ffffff;
-  color: #B5A98F;
+  color: #b5a98f;
   cursor: pointer;
 }
 
@@ -821,14 +802,14 @@ select, option{
   background-position: center top;
   background-attachment: fixed;
   background-size: 100% auto;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
 }
 
 #success h2 {
   font-weight: 150;
   padding-top: 50px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #B5A98F;
+  border-bottom: 1px solid #b5a98f;
 }
 
 #success .success_div {
@@ -836,6 +817,250 @@ select, option{
   padding: 33px 0;
 }
 
-#success .success_img img{
+#success .success_img img {
   width: 300px;
+}
+
+@media screen and (min-width: 601px){
+  
+  #is-loading {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    z-index: 8;
+  }
+  
+  #loading {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -160px;
+    text-align: center;
+    color: #fff;
+    z-index: 9;
+  }
+
+  #loading img {
+    height: 30%;
+    pointer-events: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* 画面サイズが600px以下の場合に適用 */
+  body {
+    font-size: 21px;
+  }
+
+  p {
+    font-size: 21px;
+    padding: 15px 0;
+  }
+
+  h2 {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 150;
+    font-size: 40px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #b5a98f;
+  }
+
+  header {
+    width: auto;
+    margin: 0 5%;
+  }
+
+  .logo {
+    float: none;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 370px;
+  }
+
+  .global_nav {
+    float: none;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .global_nav li {
+    display: inline;
+    margin: 0 18px;
+    font-size: 40px;
+    float: none;
+  }
+
+  footer {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f7efe0;
+    font-family: "Noto Serif JP", serif;
+  }
+  
+  footer small {
+    font-size: 22px;
+  }
+  
+  footer small a:link,
+  a:visited {
+    color: #2c76a1;
+  }
+
+  #wrap {
+  background-color: #ffffff;
+  margin-top: 160px;
+  padding: 30px 0 0;
+  }
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #loading img {
+    display: none;
+  }
+
+  #index .content {
+    padding-bottom: 300px;
+  }
+
+  #index .left-content {
+    display: none;
+    clear: both;
+    float: left;
+    margin-bottom: 50px;
+  }
+
+  #index .right-content {
+    float: none;
+    position: relative;
+  }
+  
+  #index .right-content .frame-wrapper__video {
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+
+  #index .right-content .frame-wrapper__video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #index h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 150;
+  }
+
+  #index p {
+    padding: 15px 0;
+    margin: 50px 0;
+  }
+
+  #index .toabout-btn {
+    float: none;
+    transition: 0.4s;
+    font-size: 22px;
+    font-family: "Noto Serif JP", serif;
+    color: #000000;
+    width: 100%;
+    border: 2px solid #edddbb;
+    text-align: center;
+    padding: 15px 0;
+    margin: 20px 0;
+  }
+
+  #profile h3{
+    font-size: 30px;
+  }
+
+  #profile h4{
+    font-size: 26px;
+  }
+
+  #profile .content ul {
+    margin-left: 60px;
+  }
+  
+  #profile .content li {
+    font-size: 21px;
+  }
+
+  #profile .flex-box {
+    display:-webkit-box;
+    display: -webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    }
+
+    #profile .left-content{
+    -webkit-box-ordinal-group:2;
+    -ms-flex-order:2;
+    -webkit-order:2;
+    order:2;
+    width: 100%;
+  }
+
+  #profile .right-content{
+    -webkit-box-ordinal-group:1;
+    -ms-flex-order:1;
+    -webkit-order:1;
+    order:1;
+    text-align: center;
+  }
+
+  #profile .right-content img {
+    width: 80%;
+    height: auto;
+    margin: 0;
+  }
+
+  #profile .activity {
+    margin-left: 10px;
+  }
+  
+  #profile .activity img {
+    height: 50px;
+    margin-left: 20px;
+  }
+  
+  #profile .activity img:hover {
+    opacity: 0.4;
+    transition: 0.8s;
+  }
+  
+  #profile .hashtag p {
+    padding: 0;
+  }
+  
+  #profile .content a:link,
+  a:visited {
+    color: #2c76a1;
+  }
+  
+  #profile .hashtag ul {
+    margin-bottom: 30px;
+  }
+
+  #profile .activity img {
+    height: 100px;
+    margin-left: 50px;
+  }
 }
