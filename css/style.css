@@ -1097,4 +1097,26 @@ a:visited {
     height: 100px;
     margin-left: 50px;
   }
+
+  #about h3 {
+    font-size: 30px;
+    margin: 0;
+    padding-top: 20px;
+    font-weight: lighter;
+  }
+  
+  #about #wrap ul {
+    margin-left: 23px;
+    padding-top: 15px;
+
+  }
+
+  #about .content ul li {
+    font-size: 21px;
+  }
+  
+  #about .content a:link,
+  a:visited {
+    color: #2c76a1;
+  }
 }
