@@ -927,6 +927,40 @@ a:visited {
     margin: 0 auto;
   }
 
+  #page_top {
+    display: none;
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    right: 100px;
+    bottom: 200px;
+    background: #b5a98f;
+    opacity: 0.6;
+    border-radius: 50%;
+  }
+  #page_top a {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 120px;
+    text-decoration: none;
+  }
+  #page_top a::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f102";
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: -75px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
   #loading img {
     display: none;
   }
