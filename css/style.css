@@ -1126,9 +1126,6 @@ a:visited {
     -ms-flex-order:1;
     -webkit-order:1;
     order:1;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     float: none;
     text-align: center;
     width: 100%;
@@ -1137,6 +1134,9 @@ a:visited {
   }
 
   #archive .sidebar #genre_selbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     font-family: "Noto Serif JP", serif;
     font-weight: 100;
     font-size: 18px;
