@@ -375,6 +375,7 @@ details {
 
 summary {
   cursor: pointer;
+  margin-bottom: 50px;
 }
 
 .archive_content p {
@@ -1034,7 +1035,7 @@ a:visited {
     font-size: 21px;
   }
 
-  #profile .flex-box {
+  .flex-box {
     display:-webkit-box;
     display: -webkit-flex;
     display:-ms-flexbox;
@@ -1118,5 +1119,87 @@ a:visited {
   #about .content a:link,
   a:visited {
     color: #2c76a1;
+  }
+
+  #archive .sidebar{
+    -webkit-box-ordinal-group:1;
+    -ms-flex-order:1;
+    -webkit-order:1;
+    order:1;
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  #archive .sidebar #genre_selbox {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 15px 2px;
+    margin: 30px 0;
+    width: 80%;
+  }
+
+  #archive .main{
+    -webkit-box-ordinal-group:2;
+    -ms-flex-order:2;
+    -webkit-order:2;
+    order:2;
+    float: none;
+    width: 100%;
+  }
+
+  #archive .content p, li {
+    font-size: 21px;
+  }
+  #archive h3{
+    font-size: 22px;
+  }
+
+  #archive h4{
+    display: none;
+  }
+
+  #archive .archive_content {
+    margin-bottom: 50px;
+  }
+
+  #archive .archive_content .youtube_content{
+    margin: 0 125px;
+    padding-left: 0;
+  }
+
+  #archive summary {
+    font-size: 18px;
+  }
+
+  #archive table {
+    width: 95%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #archive table tr {
+    font-size: 18px;
+  }
+  
+  #archive table th,
+  table td {
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  .yt_play::before {
+    /* YouTubeアイコン */
+    width: 84px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    transition: 0.5s;
   }
 }
