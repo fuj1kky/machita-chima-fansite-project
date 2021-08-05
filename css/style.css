@@ -1147,7 +1147,7 @@ a:visited {
     outline: none;
     font-family: "Noto Serif JP", serif;
     font-weight: 100;
-    font-size: 28px;
+    font-size: 24px;
     padding: 15px 10px;
     margin: 30px 0;
     width: 80%;
@@ -1168,7 +1168,7 @@ a:visited {
     font-size: 28px;
   }
   #archive h3{
-    font-size: 22px;
+    font-size: 30px;
   }
 
   #archive h4{
@@ -1185,7 +1185,7 @@ a:visited {
   }
 
   #archive summary {
-    font-size: 18px;
+    font-size: 28px;
     outline: none;
   }
 
@@ -1199,7 +1199,7 @@ a:visited {
   }
   
   #archive table tr {
-    font-size: 18px;
+    font-size: 28px;
   }
   
   #archive table th,
