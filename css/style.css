@@ -1131,18 +1131,21 @@ a:visited {
     width: 100%;
     margin: 0;
     margin-bottom: 50px;
+    position: static;
   }
 
   #archive .sidebar #genre_selbox {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    outline: none;
     font-family: "Noto Serif JP", serif;
     font-weight: 100;
     font-size: 18px;
-    padding: 15px 2px;
+    padding: 15px 10px;
     margin: 30px 0;
     width: 80%;
+    height: 60px;
   }
 
   #archive .main{
@@ -1176,6 +1179,7 @@ a:visited {
 
   #archive summary {
     font-size: 18px;
+    outline: none;
   }
 
   #archive table {
