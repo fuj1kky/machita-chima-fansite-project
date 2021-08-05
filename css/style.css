@@ -858,6 +858,7 @@ a:visited {
   /* 画面サイズが600px以下の場合に適用 */
   body {
     font-size: 21px;
+    -webkit-text-size-adjust: 100%;
   }
 
   p {
@@ -1135,6 +1136,10 @@ a:visited {
     position: static;
   }
 
+  select, option {
+    border: #b5a98f 2px solid;
+  }
+  
   #archive .sidebar #genre_selbox {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1147,6 +1152,7 @@ a:visited {
     margin: 30px 0;
     width: 80%;
     height: 60px;
+    border: 1px;
   }
 
   #archive .main{
