@@ -849,10 +849,16 @@ a:visited {
     z-index: 9;
   }
 
+  
   #loading img {
     height: 30%;
     pointer-events: none;
   }
+
+  #songs .songs_content_responsible {
+    display: none;
+  }
+
 }
 @media screen and (max-width: 600px) {
   /* 画面サイズが600px以下の場合に適用 */
@@ -910,7 +916,7 @@ a:visited {
   }
   
   footer small {
-    font-size: 22px;
+    font-size: 25px;
   }
   
   footer small a:link,
@@ -1216,4 +1222,27 @@ a:visited {
     opacity: 0.9;
     transition: 0.5s;
   }
+
+  #songs .songs_content_pc {
+    display: none;
+  }
+
+  #songs h3{
+    font-size: 30px;
+  }
+
+  #songs .content .youtube_content {
+    float: none;
+    margin: 0 20px;
+  }
+  
+  #songs .content table {
+    float: none;
+    width: 90%;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
 }
