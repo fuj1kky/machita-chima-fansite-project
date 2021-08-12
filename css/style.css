@@ -1245,4 +1245,85 @@ a:visited {
     margin-bottom: 50px;
   }
 
+  #information #wrap .content .container {
+    display: grid;
+    grid-template-columns: 800px;
+    grid-template-rows: 450.4px 450.4px 450.4px 450.4px 450.4px 450.4px 450.4px 450.4px 450.4px;
+    grid-gap: 30px;
+    margin: 0 41px;
+    object-fit: cover;
+  }
+
+  #information #wrap .content .container li figure img {
+    width: 800px;
+    height: 450.4px;
+    object-fit: cover;
+  }
+
+  #information #wrap .content .container li .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  #information .content .container li .date {
+    font-size: 28px;
+    margin-left: 40px;
+  }
+
+  #information .content .container li .capture {
+    margin: 0 40px;
+  }
+
+  .tags p {
+    margin: 40px;
+  }
+
+  #information  .sidebar_info {
+    text-align: center;
+  }
+  
+  #information  .sidebar_info #genre_selbox_info {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: solid;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 100;
+    font-size: 24px;
+    padding: 15px 10px;
+    margin: 30px 0;
+    width: 80%;
+    height: 60px;
+    border: 1px;
+  }
+  .pagination {
+    padding: 50px;
+  }
+
+  .pagination li {
+    margin: 5px;
+    border: 2px solid #b5a98f;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+  }
+
+  .pagination a {
+    width: 80px;
+    height: 80px;
+    font-size: 28px;
+    padding-top: 20px;
+  }
+
+  .back_to_information_page {
+    width: 400px;
+    margin: 0 auto;
+  }
 }
