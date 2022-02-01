@@ -668,6 +668,10 @@ a:visited {
   margin-bottom: 40px;
 }
 
+#info_detail .youtube_content{
+  margin-top: 30px;
+}
+
 .back_to_information_page {
   width: 200px;
   margin: 0 auto;
