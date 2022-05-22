@@ -172,6 +172,21 @@ p {
   text-align: center;
   padding: 10px 0;
 }
+
+#index .tl-btn {
+  float: left;
+  transition: 0.4s;
+  font-size: 15px;
+  font-family: "Noto Serif JP", serif;
+  color: #000000;
+  width: 400px;
+  border: 2px solid #edddbb;
+  text-align: center;
+  padding: 10px 0;
+  margin-left: 10px;
+}
+
+
 #index .main-content a {
   text-decoration: none;
 }
@@ -183,7 +198,13 @@ p {
 #index .toabout-btn:hover {
   transition: 0.4s;
   background-color: #edddbb;
-  color: #ffffff;
+  color: #2c76a1;
+}
+
+#index .tl-btn:hover {
+  transition: 0.4s;
+  background-color: #edddbb;
+  color: #2c76a1;
 }
 
 .icon:before {
@@ -826,6 +847,63 @@ a:visited {
   width: 300px;
 }
 
+#timeline {
+  background-image: url(../img/bg.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+#timeline .timeline-h2 {
+  font-size: 27px;
+  font-weight: 150;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #b5a98f;
+}
+
+#timeline .timeline-content-img {
+  max-width: 100%;
+  height: auto;
+  width /***/:auto;
+}
+
+#timeline .timeline-about-p {
+  margin-bottom: 15px;
+  padding: 15px 0px;
+}
+#timeline .timeline-about-li {
+  margin-left: 20px;
+}
+
+#timeline .timeline-content-embed {
+  max-width: 100%;
+  height: auto;
+  width /***/:auto;
+}
+
+
+#timeline .back-to-top-page-btn {
+  transition: 0.4s;
+  font-size: 15px;
+  font-family: "Noto Serif JP", serif;
+  color: #000000;
+  width: 100%;
+  border: 2px solid #edddbb;
+  text-align: center;
+  padding: 10px 0;
+  margin: 60px 0 30px 0;
+  text-decoration: none;
+}
+
+#timeline .back-to-top-page-btn:hover {
+  transition: 0.4s;
+  background-color: #edddbb;
+  color: #2c76a1;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 601px){
   
   #is-loading {
@@ -1019,6 +1097,19 @@ a:visited {
   }
 
   #index .toabout-btn {
+    float: none;
+    transition: 0.4s;
+    font-size: 28px;
+    font-family: "Noto Serif JP", serif;
+    color: #000000;
+    width: 100%;
+    border: 2px solid #edddbb;
+    text-align: center;
+    padding: 15px 0;
+    margin: 30px 0;
+  }
+
+  #index .tl-btn {
     float: none;
     transition: 0.4s;
     font-size: 28px;
@@ -1329,5 +1420,48 @@ a:visited {
   .back_to_information_page {
     width: 400px;
     margin: 0 auto;
+  }
+
+  #timeline .timeline-about-p {
+    font-size: 28px;
+    padding: 15px 0;
+  }
+
+  #timeline .timeline-h2 {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 150;
+    font-size: 40px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #b5a98f;
+  }
+
+  #timeline .cd-timeline__content h2{
+    font-size: 35px;
+  }
+
+  #timeline .text-component .timeline-content-img {
+    display: none;
+  }
+
+  #timeline .timeline-content-embed {
+    display: none;
+  }
+
+  #timeline .items-center .cd-timeline__date {
+    font-size: 30px;
+  }
+
+  #timeline .back-to-top-page-btn {
+    transition: 0.4s;
+    font-size: 28px;
+    font-family: "Noto Serif JP", serif;
+    color: #000000;
+    width: 100%;
+    border: 2px solid #edddbb;
+    text-align: center;
+    padding: 10px 0;
+    margin: 60px 0 30px 0;
+    text-decoration: none;
   }
 }

@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>サンプルページ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.ico" id="favicon">
+  <link rel="stylesheet" href="css/verticaltimelinestyle.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="theme-color" content="#ffffff"> いずれ対応できたらやる-->
+  <script src="JS/jquery-3.6.0.min.js"></script>
+  <script src="JS/loading.js" type="text/javascript"></script>
+  <script src="JS/pagetop_button.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body id="timeline">
+  <div id="is-loading">
+    <div id="loading">
+      <img src="img/loading-min.GIF" alt="loadingなう">
+    </div>
+  </div>
+  <!-- header開始 -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="inocesias.">
+      </a>
+    </div>
+    <nav>
+      <ul class="global_nav">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="archive.html">Stream Archive</a></li>
+        <li><a href="songs.html">Songs</a></li>
+        <li><a href="information.html">Information</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="wrap">
+    <div class="content">
+      <div id="page_top"><a href="wrap"></a></div>
+      <h2 class="timeline-h2">町田ちま　これまでの歩み</h2>
+      <p class="timeline-about-p">町田ちまYoutubeチャンネル登録者数50万人突破を記念して、町田ちまがこれまで歩んできた道のりをデビューから50万人突破まで簡単にタイムライン形式で紹介します。これから町田ちまを知りたい人の足がかりや昔から町田ちまを推している人の振り返りとして役に立てればと思い制作しました。</p>
+      <ul>
+        <div class="timeline-about-li">
+          <li>町田ちまを語る上では欠かせない出来事や配信をピックアップして紹介していますが、これはあくまでサイト制作者の独断と偏見で選んだものです。ご了承の上閲覧ください。もし「この出来事・配信を入れたほうがいいのではないか」という意見がありましたら、理由を添えて制作者までお問い合わせいただけると助かります。内容を精査した上で掲載させていただく場合がございます。</li>
+          <li>このページにはYoutube動画・Twitterのツイートなどの埋め込みがあります。これによって時々デザインが崩れる場合がありますが、制作上のバグではなく仕様です。ご了承下さい。</li>
+          <li>スマートフォンでの表示には推奨していません。（使用上、TwitterやYoutubeの埋め込みが表示されなかったり、デザインが崩れる場合があります。）PCブラウザでの表示を推奨します。</li>
+        </div>
+      </ul>
+      <section class="cd-timeline js-cd-timeline">
+        <div class="container max-width-lg cd-timeline__container">
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor4">
+              <img src="img/timeline/wifi.svg" alt="smile">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>初ツイート</h2>
+              <p class="color-contrast-medium"></p>
+              <p class="color-contrast-medium">初ツイートの投稿主はちまちゃんではなく…？</p>
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2018/08/31</span>
+                <div class="timeline-content-embed">
+                  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">皆さんこんにちは✨初めまして！上から読んでも下からよxegy3zhw5x6edhueu3slj9_dh</p>&mdash; 町田ちま🐹まちたちま (@chima_machita23) <a href="https://twitter.com/chima_machita23/status/1035473514814300160?ref_src=twsrc%5Etfw">August 31, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+    
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>初配信</h2>
+              <p class="color-contrast-medium">グループ活動の可能性を秘めたチャレンジ枠として始動した「にじさんじSEEDs」の2期生としてデビュー。Mirrativにて初配信。</p>
+              
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2018/09/03</span>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor6">
+              <img src="img/timeline/music.svg" alt="music">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>「変わらないもの」歌ってみた動画投稿</h2>
+              <p class="color-contrast-medium">初の歌ってみた動画「【歌ってみた】変わらないもの／奥華子【町田ちま】」を投稿。当時は環境がまだ整っておらずスマホで直撮りしての投稿でしたが、それを感じさせない圧巻の歌声は、見た目とのギャップも相まって聴く人に衝撃を与えました。</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2018/10/14</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/Cch-8tl4z2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+    
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/people.svg" alt="people">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>「ひなちなちま」結成</h2>
+              <p class="color-contrast-medium">飛鳥ひな、遠北千南、町田ちまによるユニットである「ひなちなちま」がこの日初コラボ。</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2018/11/05</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/ChQeVOnT4tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+    
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/person-add.svg" alt="person-add">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>チャンネル登録者数1万人突破</h2>  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2018/12/13</span>
+                <div class="timeline-content-embed">
+                  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">わ！！！Youtube10000人ありがと〜〜〜〜〜！！！！！！！！！🐹🐹🐹🐹🐹🐹🐹🐹🐹🐹🐹🐹🐹🐹🐹🐹🐹💕💕💕💕💕💕💕💕💕💕💕💕<br>これからも町田ちまとゴンザレスをよろしくお願いします🐹✨ <a href="https://t.co/zZ4snvGnKD">pic.twitter.com/zZ4snvGnKD</a></p>&mdash; 町田ちま🐹まちたちま (@chima_machita23) <a href="https://twitter.com/chima_machita23/status/1073157074417152000?ref_src=twsrc%5Etfw">December 13, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/people.svg" alt="people">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>「にじさんじ狂犬ズ」結成</h2>
+              <p class="color-contrast-medium">町田ちま、黒井しばによるユニットである「にじさんじ狂犬ズ」がこの日初コラボ。飼い主の青天ちゃんねる・星月せいとともにHuman:Fall Flatをプレイしました。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2018/12/27</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/CKuDKcyqLNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor6">
+              <img src="img/timeline/music.svg" alt="music">
+            </div> 
+    
+            <div class="cd-timeline__content text-component">
+              <h2>【歌ってみた】フリージア/Uru【町田ちま】　投稿</h2>
+              <p class="color-contrast-medium">色々な面で彼女を代表するカバー曲となるフリージアの歌ってみた動画がこの日投稿。<br>様々な派生が一挙に集まった<a href="https://youtu.be/5Cr-LIuz57w" target="_blank" rel="noopener noreferrer">フリージアしばり歌枠</a>では、概要欄のセトリに「フリージア各種」という町田ちましか使わないであろう文字列が並びました。</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2019/02/24</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/h41KFaq4UXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+          
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>一人合唱(デュエット)やってみる。<br>【町田ちま】</h2>
+              <p class="color-contrast-medium">今やだいぶ定番となった一人合唱の初出。概要欄には「寂しくない」の一言が…。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2019/04/03</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/7FCIPDI51ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>にじさんじマスコッツ始動</h2>
+              <p class="color-contrast-medium">ジョニー（夢追翔）、ゴンザレス（町田ちま）、うさちゃん先生（郡道美玲）、セバスチャン（リゼ・ヘルエスタ）によるマスコットコラボ。前々からたまに配信で出てくるゴンザレスにとっては初のコラボでしたが、かなり地獄の様相です。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2019/04/17</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/gwcpzCkmAdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/person-add.svg" alt="person-add">
+            </div> <!-- cd-timeline__img -->
+
+            <div class="cd-timeline__content text-component">
+              <h2>チャンネル登録者数5万人突破</h2>  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2019/08/26</span>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor4">
+              <img src="img/timeline/wifi.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>一周年記念&新衣装（夏服）公開</h2>
+              <p class="color-contrast-medium">一周年記念配信にて、大人っぽい夏服をお披露目。</p>
+
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2019/09/11</span>
+                <div class="timeline-content-embed">
+                  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/%E3%81%AA%E3%81%BE%E5%85%AC?src=hash&amp;ref_src=twsrc%5Etfw">#なま公</a> <br>新衣装お披露目ありがとうございました！🐹✨<br>ね、ちょっとは大人っぽくみえるかな…？ <a href="https://t.co/zW7U7EgQeB">pic.twitter.com/zW7U7EgQeB</a></p>&mdash; 町田ちま🐹まちたちま (@chima_machita23) <a href="https://twitter.com/chima_machita23/status/1171792109243789312?ref_src=twsrc%5Etfw">September 11, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor6">
+              <img src="img/timeline/music.svg" alt="music">
+            </div> 
+    
+            <div class="cd-timeline__content text-component">
+              <h2>獣ゆく細道/町田ちまとジョー・力一(Cover)　投稿</h2>
+              <p class="color-contrast-medium">同じにじさんじSEEDs2期生のジョー・力一とのコラボで<a href="https://youtu.be/e0W-QW58Dy0" target="_blank" rel="noopener noreferrer">「獣ゆく細道/町田ちまとジョー・力一(Cover)（オリジナル：椎名林檎と宮本浩次）」</a>のカバーを投稿。町田ちま。ジョー・力一のユニットは「はむぴえよ」としても活動しています。</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2019/09/19</span>
+                <div class="timeline-content-embed">
+                  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">9/19<br>22:00〜プレミア公開<br>りきちゃん【<a href="https://twitter.com/JoeRikiichi?ref_src=twsrc%5Etfw">@JoeRikiichi</a> 】との初めての歌ってみたになります🤡🐹<br>サムネイルはりきちゃんのママのスドウミノル【<a href="https://twitter.com/minoru_sudou?ref_src=twsrc%5Etfw">@minoru_sudou</a> 】さんに描いていただきました✨<br>よろしくお願いします！<br><br>獣ゆく細道/町田ちまとジョー・力一(Cover) <a href="https://t.co/HTuFUswhqC">https://t.co/HTuFUswhqC</a> <a href="https://t.co/2oAi3JyLZL">pic.twitter.com/2oAi3JyLZL</a></p>&mdash; 町田ちま🐹まちたちま (@chima_machita23) <a href="https://twitter.com/chima_machita23/status/1173950831361552384?ref_src=twsrc%5Etfw">September 17, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor4">
+              <img src="img/timeline/error.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>活動休止を発表</h2>
+              <p class="color-contrast-medium">学業に専念するため、配信活動の休止を発表しました。</p>
+
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2019/10/11</span>
+                
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor4">
+              <img src="img/timeline/wifi.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>復 帰 宣 言</h2>
+              <p class="color-contrast-medium">おかえり…！</p>
+
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2020/04/24</span>
+                <div class="timeline-content-embed">
+                  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">た　だ　い　ま</p>&mdash; 町田ちま🐹まちたちま (@chima_machita23) <a href="https://twitter.com/chima_machita23/status/1253655159684526080?ref_src=twsrc%5Etfw">April 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> 
+    
+            <div class="cd-timeline__content text-component">
+              <h2>笑ってはいけない！感動エピソード<br>選手権</h2>
+              <p class="color-contrast-medium">緑仙企画の「笑ってはいけない！感動エピソード選手権」に出演。披露した「全ての思いを歌にのせます的な(caro mio ben)」は、休止期間のブランクを感じさせない圧巻の上手さで審査員・MCを魅了しました。結果は如何に…</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2020/04/30</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/e-JjJecRblU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> 
+    
+            <div class="cd-timeline__content text-component">
+              <h2>5万人記念新衣装お披露目</h2>
+              <p class="color-contrast-medium">ゆったりとした部屋着チックな5万人記念新衣装をお披露目。同時に猫耳も実装。最近は主にマイクラ配信などで多く着ています。</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2020/05/05</span>
+                <div class="timeline-content-embed">
+                  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">5万人記念新衣装です🐹✨<br>この衣装をいただけたのはリスナーの皆さんやママ、大切な仲間のおかげです！本当にありがとう！！！<a href="https://twitter.com/hashtag/%E3%81%AA%E3%81%BE%E5%85%AC?src=hash&amp;ref_src=twsrc%5Etfw">#なま公</a> <a href="https://t.co/spXwqBQryi">pic.twitter.com/spXwqBQryi</a></p>&mdash; 町田ちま🐹まちたちま (@chima_machita23) <a href="https://twitter.com/chima_machita23/status/1257656181436252160?ref_src=twsrc%5Etfw">May 5, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/person-add.svg" alt="person-add">
+            </div> <!-- cd-timeline__img -->
+
+            <div class="cd-timeline__content text-component">
+              <h2>チャンネル登録者数10万人突破</h2>  
+              <p class="color-contrast-medium">耐久歌枠中にチャンネル登録者数10万人を突破。決して順風満帆とは言えない道のりの中、活動休止と復帰を経てチャンネル登録者数10万人を突破した瞬間は、ちまちゃんもリスナーも様々な感情を持ち合わせていたようなそんな配信でした。</p>
+
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2020/05/17</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/8-1D5IxKOVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor4">
+              <img src="img/timeline/wifi.svg" alt="chat">
+            </div> 
+    
+            <div class="cd-timeline__content text-component">
+              <h2>2.0アップデート・お披露目</h2>
+              <p class="color-contrast-medium">Live2Dモデルがブラッシュアップされ、大幅アップデート。さらに表情がよく分かるようになりました。まんまるほっぺが可愛い。</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2020/05/05</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/dtMI9ZiIgPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor6">
+              <img src="img/timeline/music.svg" alt="music">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>【歌ってみた】フリージア/Uru【町田ちま】 100万再生突破</h2>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2020/06/23</span>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>数学との確執</h2>
+              <p class="color-contrast-medium">かねてより数学嫌いを公表し、度々リスナーから「数学と和解できましたか？」と聞かれる町田ちま。<br>概要欄で「余裕っすねw」と意気込んで望んだこの配信は、アーカイブが確認しやすい配信と好評の様子です。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2020/07/17</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/xrZNPmqQ1Rc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>伝説の配信</h2>
+              <p class="color-contrast-medium">「耐久をやりたくなった」という理由で行われた「【検証】人は同じ曲を何時間歌い続けることができるのか？ Singing Stream【町田ちま/にじさんじ】」という配信。自己紹介もなく始まったかと思えば、雑談も休憩も無くひたすらフリージアを歌うまさに狂気の配信になりました。<br>配信を聞きながら就寝し、いざ起きても歌い続ける町田ちまと何回フリージアを聞いても毎回新曲かのように盛り上がるリスナーの姿に感動と恐怖を覚えた人も数知れず…。この配信の影響は凄まじく、
+                <br>・Twitterトレンド1~3位独占
+                <br>・最大同接2.5万人(深夜4時に同接1.4万人)
+                <br>・新規チャンネル登録者数1万人<br>を達成し、まさに伝説の配信になりました。
+              </p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2020/09/05</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/UI5tOajbknM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor6">
+              <img src="img/timeline/music.svg" alt="music">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>カバーアルバム「Prismatic Colors」に参加</h2>
+              <p class="color-contrast-medium">にじさんじ初のカバーアルバムとなる「Prismatic Colors」が発売されました。通常版と予約特典版で合わせて2曲を披露し、CD収録を心待ちにしていたファンを始め多くの視聴者をその圧倒的な歌声で魅了しました。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2020/10/28</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/nHRPsX_QdLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/person-add.svg" alt="person-add">
+            </div> <!-- cd-timeline__img -->
+
+            <div class="cd-timeline__content text-component">
+              <h2>チャンネル登録者数20万人突破</h2>  
+              <p class="color-contrast-medium">耐久歌枠中にチャンネル登録者数20万人を突破。</p>
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2020/11/04</span>
+                <div class="timeline-content-embed">
+                  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">本当にありがとう大好きだ！！！！！ <a href="https://t.co/yjoWb2evHa">pic.twitter.com/yjoWb2evHa</a></p>&mdash; 町田ちま🐹まちたちま (@chima_machita23) <a href="https://twitter.com/chima_machita23/status/1323989122059366404?ref_src=twsrc%5Etfw">November 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>現在時刻に３が入るたびにデビルマンのうたが流れるMinecraft</h2>
+              <p class="color-contrast-medium">「【Minecraft】現在時刻に３が入るたびにデビルマンのうたが流れるMinecraft～Singing Stream???～【町田ちま/にじさんじ】」を配信。フリージアに並び彼女の代名詞でもある「デビルマンのうた」と、彼女がよく配信する「Minecraft」をかけ合わせた狂気の企画。一応歌枠。23時代は特に見もの。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2020/11/14</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/ndvv9QvcCHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>22万人突破したら即終了配信</h2>
+              <p class="color-contrast-medium">配信時間よりOPの時間のほうが長い即終了配信。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2020/11/23</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/zuqz5BXrafs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>回せ―――。シャニマスガシャ配信</h2>
+              <p class="color-contrast-medium">実は熱心なシャニマスP（ノクチル推し）の町田ちま。ノクチルメンバーのpSSRが来ると高確率でガシャ配信をしています。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/01/07</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/sIkbx4EdIjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor6">
+              <img src="img/timeline/plane.svg" alt="plane">
+            </div> 
+    
+            <div class="cd-timeline__content text-component">
+              <h2>にじさんじ3周年記念プロジェクト「PALETTE」第一弾に参加</h2>
+              <p class="color-contrast-medium">3周年を迎えたにじさんじを記念するプロジェクトである「PALETTE」の第一弾に参加しました。「にじさんじが歩んできた軌跡とこれからの未来」をテーマにした楽曲「Wonder NeverLand」を総勢12名のライバーと歌い上げました。</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/02/24</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/txc0Vn2ub6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor4">
+              <img src="img/timeline/plane.svg" alt="plane">
+            </div> 
+    
+            <div class="cd-timeline__content text-component">
+              <h2>にじさんじ Anniversary Festival 2021に漫画研究部として創作本を販売</h2>
+              <p class="color-contrast-medium">にじさんじ初の大型フェス「にじさんじ Anniversary Festival 2021」にて、自身が描いた過去のイラストを収録した「Watercolor」を販売しました。アナログ水彩画の温かみのあるイラストの数々は必見です。（現在は在庫切れ）</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/02/26</span>
+                <div class="timeline-content-embed">
+                  <img class="timeline-content-img" src="img/timeline/watercolor.jpg" alt="">
+                </div>
+
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> 
+    
+            <div class="cd-timeline__content text-component">
+              <h2>毎日歌枠ウィーク</h2>
+              <p class="color-contrast-medium">一週間様々なジャンル縛りで毎日歌枠を配信。たまに自分を見失うこともありましたが、それでも懸命に歌う姿、そして幅広い選曲、1週間歌枠を続けるスタミナに感動と驚異を覚えました。</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/03/15 - 2021/03/21</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/ohebndA3N0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/person-add.svg" alt="person-add">
+            </div> <!-- cd-timeline__img -->
+
+            <div class="cd-timeline__content text-component">
+              <h2>チャンネル登録者数30万人突破</h2>  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/04/26</span>
+                <div class="timeline-content-embed">
+                  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">30万人本当にありがとうございます！<br>これからも応援していただけるように頑張ります🐹 <a href="https://t.co/8Qq20g1xpQ">pic.twitter.com/8Qq20g1xpQ</a></p>&mdash; 町田ちま🐹まちたちま (@chima_machita23) <a href="https://twitter.com/chima_machita23/status/1386698561870393345?ref_src=twsrc%5Etfw">April 26, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> 
+  
+            <div class="cd-timeline__content text-component">
+              <h2>メンバースタンプから生まれた配信</h2>
+              <p class="color-contrast-medium">「NKODICEで使われる6個のひらがなが全てメンバーシップのスタンプに存在している」という天才的なマシュマロから生まれた配信。メンバーシップ加入やメンバーによるスタンプ濫用が相次ぎ、お祭り騒ぎの配信でした。本人もめちゃくちゃ楽しそう。（視聴時要概要欄参照）</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/06/05</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/hiCVshz-s-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> 
+  
+            <div class="cd-timeline__content text-component">
+              <h2>ついに3Dお披露目へ</h2>
+              <p class="color-contrast-medium">初配信から1,052日を経て、ついに町田ちまの3Dお披露目が行われました。バラエティーコーナーや計7曲を歌唱したライブ、圧巻のEDなど一秒も見逃せない瞬間を是非見てください。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/07/21</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/zoL0zudcFDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor6">
+              <img src="img/timeline/music.svg" alt="music">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>オリジナル曲「6月のプレリュード」<br>発表・配信</h2>
+              <p class="color-contrast-medium">3Dお披露目配信の最後に発表されたのは、本人・リスナーみんなが待ち望んでいた町田ちまオリジナル曲「6月のプレリュード」のリリースについてでした。作曲・編曲はあの町田ちまの代名詞「フリージア」を手掛けた岩見直明氏が担当し、歌詞はRain Dropsの「シグナル」などを手掛ける和田アヤナ氏が担当しました。また、MVのイラストはママである栗原さくら氏、MVの動画は昔から町田ちまとの親交が深いぴろぱる氏が担当と、まさに誰もが納得する布陣となりました。MV中には町田ちま本人による手書きの歌詞もあり、必見です。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/07/21</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/2yD0iNl2E-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor4">
+              <img src="img/timeline/wifi.svg" alt="wifi">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>Webメディア「Up-Station」に町田ちまのインタビューが掲載</h2>
+              <p class="color-contrast-medium">VTuberの新しい魅力と出会えるwebメディア「Up-Station」に町田ちまのインタビューが掲載。LIGHT UP TONESのことやこれからの活動についてなど、より町田ちまの事を多く知ることができる内容です。<a href="https://upstation-ntv.com/article/machita_interview" target="_blank" rel="noopener noreferrer">インタビューはこちらから！</a>
+              </p>
+
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/07/29</span>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor6">
+              <img src="img/timeline/plane.svg" alt="plane">
+            </div> 
+    
+            <div class="cd-timeline__content text-component">
+              <h2>ARライブイベント<br>「LIGHT UP TONES」出演</h2>
+              <p class="color-contrast-medium">2021年7月9日に告知されていたにじさんじ初のリアルタイムARライブ「LIGHT UP TONES」のDay1に出演しました。にじさんじが誇る圧倒的な技術力で「ライバーがここにいるんだ」と実感できるライブでした。現在、ライブ映像を収めた<a href="https://shop.nijisanji.jp/s/niji/item/detail/NJSJ-037?ima=4847" target="_blank" rel="noopener noreferrer">Blu-Rayディスク</a>が販売中の他、各ストリーミングサイトでARライブの中から厳選された16曲を<a href="https://va.lnk.to/dkSoTeR9" target="_blank" rel="noopener noreferrer">アルバム形式</a>で配信中です。</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/07/31</span>
+                <div class="timeline-content-embed">
+                  <img class="timeline-content-img" src="img/timeline/lightuptones.jpg" alt="">
+                </div>
+
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor4">
+              <img src="img/timeline/wifi.svg" alt="wifi">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>新衣装お披露目</h2>
+              <p class="color-contrast-medium">誕生日前日の配信にて、セーラー服モチーフのステージ衣装をお披露目。また、同時にインナーカラーに青をあしらったボブカットとハーフツインテールも初披露となりました。普段はあまり許されることのないリスナーの「かわいい」コメントが許される配信になりました。</p>
+
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/08/04</span>
+                <dir class="timeline-content-embed">
+                  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">うまれました！🎉<br>新しい衣装もよろしくね🥳<br> <a href="https://twitter.com/hashtag/%E7%94%BA%E7%94%B0%E3%81%A1%E3%81%BE%E7%88%86%E8%AA%952021?src=hash&amp;ref_src=twsrc%5Etfw">#町田ちま爆誕2021</a> <a href="https://t.co/LTkCNZEbiA">pic.twitter.com/LTkCNZEbiA</a></p>&mdash; 町田ちま🐹まちたちま (@chima_machita23) <a href="https://twitter.com/chima_machita23/status/1422955902726860801?ref_src=twsrc%5Etfw">August 4, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </dir>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor6">
+              <img src="img/timeline/music.svg" alt="music">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>フォニイ - ツミキ / 町田ちま(Cover) 投稿</h2>
+              <p class="color-contrast-medium">誕生日の21時に、新衣装でのMVが素敵な「フォニイ - ツミキ / 町田ちま(Cover)」を投稿。一見幼く見えるそのビジュアルから発せられる表現力抜群で透明感のある歌声に、町田ちまファンのみならず普段町田ちまを見ていない人、ひいてはVtuber文化に触れていなかった人からも莫大な評価を得ました。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/08/05</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/k9Eewd8TEWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor4">
+              <img src="img/timeline/wifi.svg" alt="wifi">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>活動3周年</h2>
+              <p class="color-contrast-medium">上から読んでも下から読んでも"まちた"ちまです。</p>
+
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/08/31</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/cODusO924PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>第2回にじ歌DAY参加</h2>
+              <p class="color-contrast-medium">にじさんじライバー10人による歌配信リレー「にじ歌DAY」に4番手として参加。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/09/23</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/fzvAqgKFoNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/person-add.svg" alt="person-add">
+            </div> <!-- cd-timeline__img -->
+
+            <div class="cd-timeline__content text-component">
+              <h2>チャンネル登録者数40万人突破</h2>  
+              <p class="color-contrast-medium">ゲリラ歌枠中に達成。</p>
+
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/09/28</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/t-iPCZPiLpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>にじさんじのレバガチャダイパン #55, #56出演</h2>
+              <p class="color-contrast-medium">にじさんじが3Dでお届けする友達の家ゲーム実況バラエティ「ヤシロ&ササキのレバガチャダイパン」にメリッサ・キンレンカとともに出演。#55では「キキトリック」、#56では「マリオスポーツミックス」をプレイしました。普段の配信ではあまり見られない姿が見られるのでおすすめです。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/12/10, 2021/12/17</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/hewyF3aC8gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>NJU歌謡祭2021 出演</h2>
+              <p class="color-contrast-medium">総勢58名のライバーが出演するにじさんじのユニット歌謡祭に参加。前半後半各1曲を披露しました。歌手を夢見る少女の晴れ舞台を是非ご覧ください。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2021/12/31</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/J2nMpqwaPIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor6">
+              <img src="img/timeline/music.svg" alt="music">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>フォニイ- ツミキ / 町田ちま(Cover) 1000万再生突破</h2>
+              <p class="color-contrast-medium">2021年8月5日に投稿された「フォニイ- ツミキ / 町田ちま(Cover)」がこの日1000万再生を突破しました。当時にじさんじの歌ってみたでは7番目の快挙となり、様々な人から愛される歌ってみたとなりました。現在もその勢いは衰えを知らず、2022年5月22日現在再生数は1444万を突破。にじさんじ内の歌ってみたでは2番目に再生数の多い動画となりました。</p>
+
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2020/02/01</span>
+                <div class="timeline-content-embed">
+                  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">フォニイ1000万回再生！🦊<br>心の底から嬉しいです。本当に本当にありがとうございます！！<br><br>フォニイ- ツミキ / 町田ちま(Cover)<a href="https://t.co/QUU58Gha8I">https://t.co/QUU58Gha8I</a> <a href="https://t.co/MJTzCw5VUm">pic.twitter.com/MJTzCw5VUm</a></p>&mdash; 町田ちま🐹まちたちま (@chima_machita23) <a href="https://twitter.com/chima_machita23/status/1488447195040808960?ref_src=twsrc%5Etfw">February 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>#にじ女子ヴァロカスタム</h2>
+              <p class="color-contrast-medium">実は生粋のVALORANTプレイヤーの町田ちま。頑張ってコミュニケーションを取りながらも強くてかわいい町田ちまを見ることができる配信です。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2022/02/01</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/soGiMbYsdB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor6">
+              <img src="img/timeline/plane.svg" alt="plane">
+            </div> 
+    
+            <div class="cd-timeline__content text-component">
+              <h2>「にじさんじアーカイブス2021-2022」<br>発売</h2>
+              <p class="color-contrast-medium">「のぞき見～ライバーの裏側からプライベートまで～」をコンセプトにした周年記念本「にじさんじアーカイブス2021-2022」が発売されました。にじさんじライバーのプロフィールを始め、ライバー活動の裏側やプライベートの一部を覗き見することができます。貴重な町田ちまの私服も掲載しています。<a href="https://shop.nijisanji.jp/s/niji/item/detail/NJSJ-037?ima=4847" target="_blank" rel="noopener noreferrer">Blu-Rayディスク</a>が販売中の他、各ストリーミングサイトでARライブの中から厳選された16曲を<a href="https://va.lnk.to/dkSoTeR9" target="_blank" rel="noopener noreferrer">アルバム形式</a>で配信中です。</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2022/02/25</span>
+                <div class="timeline-content-embed">
+                  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【🎉<a href="https://twitter.com/hashtag/%E3%81%AB%E3%81%98%E3%81%95%E3%82%93%E3%81%98%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96%E3%82%B9?src=hash&amp;ref_src=twsrc%5Etfw">#にじさんじアーカイブス</a> 2021-2022発売日！】<br><br>本日2/25(金)は「にじさんじアーカイブス 2021-2022」発売日！<br>現在 <a href="https://twitter.com/hashtag/%E3%81%AB%E3%81%98%E3%82%B9%E3%83%88%E3%82%A2?src=hash&amp;ref_src=twsrc%5Etfw">#にじストア</a> では通常版を取り扱い中！<br><br>商品ページはこちら▽<a href="https://t.co/o5uyOZnW1s">https://t.co/o5uyOZnW1s</a><br>※豪華版は完売いたしました。<br>※にじさんじオフィシャルストア特典は終了しております。 <a href="https://t.co/7GslKrZ3QI">pic.twitter.com/7GslKrZ3QI</a></p>&mdash; にじさんじ公式🌈🕒 (@nijisanji_app) <a href="https://twitter.com/nijisanji_app/status/1497028633969504260?ref_src=twsrc%5Etfw">February 25, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/chat.svg" alt="chat">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>3.0お披露目</h2>
+              <p class="color-contrast-medium">2021年12月頃に発表されていた3.0がついに実装・お披露目になりました。泣き顔・怒り顔・ドヤ顔・照れ顔のバリエーションが増え、さらに表情が豊かに。スパチャ読みまでニコニコしながら見れる配信です。</p>
+  
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2022/04/22</span>
+                <div class="timeline-content-embed">
+                  <iframe width="352" height="198" src="https://www.youtube.com/embed/hbHhBb-n3qY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--varcolor5">
+              <img src="img/timeline/person-add.svg" alt="person-add">
+            </div> <!-- cd-timeline__img -->
+
+            <div class="cd-timeline__content text-component">
+              <h2>チャンネル登録者数50万人突破</h2>  
+              <p class="color-contrast-medium">初配信から1,352日、ついにハーフミリオンとなるチャンネル登録者数50万人を突破。2年前の同日に10万人を突破していたこと、50万人突破の瞬間に歌っていたのは彼女の初めての歌ってみた動画である「変わらないもの」だったこととエモーショナルな配信となりました。</p>
+
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">2022/05/17</span>
+                <div class="timeline-content-embed">
+                  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">改めて50万人ありがとうございます💓<br>トレンドも嬉しい！ <a href="https://t.co/h9IW9uqJkW">pic.twitter.com/h9IW9uqJkW</a></p>&mdash; 町田ちま🐹まちたちま (@chima_machita23) <a href="https://twitter.com/chima_machita23/status/1526593819734466560?ref_src=twsrc%5Etfw">May 17, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+      
+        </div>
+      </section> <!-- cd-timeline -->
+      <script src="js/verticaltimeline.js"></script>
+
+      <h2 class="timeline-h2">参考文献など</h2>
+      <ul>
+        <div class="timeline-about-li">
+          <li><a href="https://wikiwiki.jp/nijisanji/" target="_blank" rel="noopener noreferrer">にじさんじ 非公式Wiki</a></li>
+          <li><a href="https://twitter.com/chima_machita23" target="_blank" rel="noopener noreferrer">Twitter - 町田ちま🐹まちたちま</a></li>
+          <li><a href="https://www.youtube.com/channel/UCo7TRj3cS-f_1D9ZDmuTsjw" target="_blank" rel="noopener noreferrer">Youtube - 町田ちま【にじさんじ】</a></li>
+          <li>サイトの制作にあたって印象に残る出来事を教えてくださった方（ありがとうございました！）</li>
+        </div>
+      </ul>
+      <div class="btn-content">
+        <a href="index.html">
+          <div class="back-to-top-page-btn">
+            Back to top page
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <small>Created, Designed by FU　お問い合わせは<a href="contact.html">こちら</a>から。<br>
+  </footer>
+</body>
+
+</html>
+
+
