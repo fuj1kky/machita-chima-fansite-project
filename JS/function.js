@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var display_minecraft = document.getElementsByClassName('minecraft');
     var display_shinycolors = document.getElementsByClassName('shinycolors');
     var display_valorant = document.getElementsByClassName('valorant');
+    var display_OneHandClapping = document.getElementsByClassName('OneHandClapping');
     var display_othergame = document.getElementsByClassName('othergame');
     var display_talk = document.getElementsByClassName('talk');
     var display_durable_immediately = document.getElementsByClassName('durable_immediately');
@@ -92,6 +93,12 @@ document.addEventListener("DOMContentLoaded", function () {
         display_other = Array.from(display_other);
         for (var i = 0; i < display_other.length; i++) {
           display_other[i].style.display = "";
+        }
+        break;
+      case 'genre_OneHandClapping':
+        display_OneHandClapping = Array.from(display_OneHandClapping);
+        for (var i = 0; i < display_OneHandClapping.length; i++) {
+          display_OneHandClapping[i].style.display = "";
         }
         break;
       default:
