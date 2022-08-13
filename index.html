@@ -26,7 +26,16 @@
 <body id="index">
   <div id="is-loading">
     <div id="loading">
-      <img src="img/loading-min.GIF" alt="loadingなう">
+      <script type="text/javascript">
+        var randomList = new Array(
+          "img/loading-min.GIF",
+          "img/loading2.gif"
+        );
+        var num = Math.floor(Math.random() * randomList.length);
+        var printHtml = '<img src=' + randomList[num] + ' alt="ランダム画像">';
+        document.write(printHtml);
+      </script>
+      <!-- <img src="img/loading2.gif" alt="loadingなう"> -->
     </div>
   </div>
   <!-- header開始 -->
