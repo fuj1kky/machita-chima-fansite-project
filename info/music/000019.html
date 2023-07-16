@@ -1,100 +1,147 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>詳細情報</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css" />
+    <link rel="icon" href="../../img/favicon.ico" id="favicon" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
+    <script src="../../JS/jquery-3.6.0.min.js"></script>
+    <script defer src="../../JS/loading.js" type="text/javascript"></script>
+    <script src="../../JS/pagetop_button.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>詳細情報</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
-  <link rel="icon" href="../../img/favicon.ico" id="favicon">
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
-  <script src="../../JS/jquery-3.6.0.min.js"></script>
-  <script src="../../JS/loading.js" type="text/javascript"></script>
-  <script src="../../JS/pagetop_button.js" type="text/javascript"></script>
-  <meta name="viewport" content="width=device-width">
-</head>
-
-<body id="info_detail">
-  <div id="is-loading">
-    <div id="loading">
-      <img src="../../img/loading-min.GIF" alt="loadingなう">
-    </div>
-  </div>
-  <!-- header開始 -->
-  <header>
-    <div class="logo">
-      <a href="../../index.html">
-        <img src="../../img/logo.png" alt="inocesias.">
-      </a>
-    </div>
-    <nav>
-      <ul class="global_nav">
-        <li><a href="../../profile.html">Profile</a></li>
-        <li><a href="../../archive.html">Stream Archive</a></li>
-        <li><a href="../../songs.html">Songs</a></li>
-        <li><a href="../../information.html">Information</a></li>
-        <li><a href="../../about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div id="wrap">
-    <div class="content">
-      <h2 class="icon">町田ちま初のオリジナルソング『6月のプレリュード』リリース決定！</h2>
-      <div class="tags appearance">
-        <p>音楽情報</p>
+  <body id="info_detail">
+    <div id="loading"></div>
+    <!-- header開始 -->
+    <header>
+      <div class="logo">
+        <a href="../../index.html">
+          <img src="../../img/logo.png" alt="inocesias." />
+        </a>
       </div>
-      <div class="info-main-content">
-        <p>3Dお披露目配信にて、町田ちま初のオリジナルソングのリリースが決定しました！作曲・編曲は『フリージア』を手掛けた岩見直明さんです。
-          これまでの、そしてこれからの町田ちまの思いが詰まった素敵な楽曲です。本楽曲はYouTubeでのMV公開に加え、各音楽プラットフォームでの配信もされます。
-        </p>
-        <h3 class="icon">『6月のプレリュード』概要（敬称略）</h3>
-        <p>
-        <ul>
-          <li>
-            作曲・編曲：岩見直明
-          </li>
-          <li>
-            歌詞：和田アヤナ
-          </li>
-          <li>
-            イラスト：栗原さくら
-          </li>
-          <li>
-            動画・ミックス：ぴろぱる
-          </li>
-          <li>
-            歌唱・文字：町田ちま
-          </li>
+      <nav>
+        <ul class="global_nav">
+          <li><a href="../../profile.html">Profile</a></li>
+          <li><a href="../../archive.html">Stream Archive</a></li>
+          <li><a href="../../songs.html">Songs</a></li>
+          <li><a href="../../information.html">Information</a></li>
+          <li><a href="../../about.html">About</a></li>
         </ul>
-        </p>
-        <p>
-          MV：<a href="https://www.youtube.com/watch?v=2yD0iNl2E-I" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=2yD0iNl2E-I</a><br>
-          配信：<a href="https://linkco.re/eRTsDHdR" target="_blank" rel="noopener noreferrer">linkco.re/eRTsDHdR</a>
-        </p>
-        <div class="info_grid">
+      </nav>
+    </header>
+    <div id="wrap">
+      <div class="content">
+        <h2 class="icon">町田ちま初のオリジナルソング『6月のプレリュード』リリース決定！</h2>
+        <div class="tags appearance">
+          <p>音楽情報</p>
+        </div>
+        <div class="info-main-content">
+          <p>
+            3Dお披露目配信にて、町田ちま初のオリジナルソングのリリースが決定しました！作曲・編曲は『フリージア』を手掛けた岩見直明さんです。
+            これまでの、そしてこれからの町田ちまの思いが詰まった素敵な楽曲です。本楽曲はYouTubeでのMV公開に加え、各音楽プラットフォームでの配信もされます。
+          </p>
+          <h3 class="icon">『6月のプレリュード』概要（敬称略）</h3>
+
           <ul>
-            <li>
-              <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【町田ちまオリジナル楽曲リリース！】<br><br>町田ちま( <a href="https://twitter.com/chima_machita23?ref_src=twsrc%5Etfw">@chima_machita23</a> )初のオリジナル楽曲は、22:30よりまもなくMVをプレミア公開！<a href="https://t.co/2zGNxQJnSX">https://t.co/2zGNxQJnSX</a><br><br>更に、この後7/22(木)0:00より、各ストアにて順次配信開始！<br><br>リリース情報▽<a href="https://t.co/3r58GMTIco">https://t.co/3r58GMTIco</a> <a href="https://t.co/e2aasMmqSB">pic.twitter.com/e2aasMmqSB</a></p>&mdash; にじさんじ公式🌈🕒 (@nijisanji_app) <a href="https://twitter.com/nijisanji_app/status/1417839325102972930?ref_src=twsrc%5Etfw">July 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </li>
-            <li>
-              <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">この後22:30より初のオリジナル曲『6月のプレリュード』がプレミア公開されます！<br>町田の想いを素敵な曲にしていただきました。聴いてくれると嬉しいです！<a href="https://twitter.com/hashtag/%E7%94%BA%E7%94%B0%E3%81%A1%E3%81%BE3D?src=hash&amp;ref_src=twsrc%5Etfw">#町田ちま3D</a> <br><br>【MV】6月のプレリュード / 町田ちま【にじさんじ】<a href="https://t.co/RjPuwDLqPe">https://t.co/RjPuwDLqPe</a> <a href="https://t.co/6HzrAjaubR">pic.twitter.com/6HzrAjaubR</a></p>&mdash; 町田ちま🐹7/21 21:00〜3D 水曜日！！！ (@chima_machita23) <a href="https://twitter.com/chima_machita23/status/1417835901107924996?ref_src=twsrc%5Etfw">July 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </li>
+            <li>作曲・編曲：岩見直明</li>
+            <li>歌詞：和田アヤナ</li>
+            <li>イラスト：栗原さくら</li>
+            <li>動画・ミックス：ぴろぱる</li>
+            <li>歌唱・文字：町田ちま</li>
           </ul>
+
+          <p>
+            MV：<a
+              href="https://www.youtube.com/watch?v=2yD0iNl2E-I"
+              target="_blank"
+              rel="noopener noreferrer"
+              >https://www.youtube.com/watch?v=2yD0iNl2E-I</a
+            ><br />
+            配信：<a href="https://linkco.re/eRTsDHdR" target="_blank" rel="noopener noreferrer"
+              >linkco.re/eRTsDHdR</a
+            >
+          </p>
+          <div class="info_grid">
+            <ul>
+              <li>
+                <blockquote class="twitter-tweet">
+                  <p lang="ja" dir="ltr">
+                    【町田ちまオリジナル楽曲リリース！】<br /><br />町田ちま(
+                    <a href="https://twitter.com/chima_machita23?ref_src=twsrc%5Etfw"
+                      >@chima_machita23</a
+                    >
+                    )初のオリジナル楽曲は、22:30よりまもなくMVをプレミア公開！<a
+                      href="https://t.co/2zGNxQJnSX"
+                      >https://t.co/2zGNxQJnSX</a
+                    ><br /><br />更に、この後7/22(木)0:00より、各ストアにて順次配信開始！<br /><br />リリース情報▽<a
+                      href="https://t.co/3r58GMTIco"
+                      >https://t.co/3r58GMTIco</a
+                    >
+                    <a href="https://t.co/e2aasMmqSB">pic.twitter.com/e2aasMmqSB</a>
+                  </p>
+                  &mdash; にじさんじ公式🌈🕒 (@nijisanji_app)
+                  <a
+                    href="https://twitter.com/nijisanji_app/status/1417839325102972930?ref_src=twsrc%5Etfw"
+                    >July 21, 2021</a
+                  >
+                </blockquote>
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+              </li>
+              <li>
+                <blockquote class="twitter-tweet">
+                  <p lang="ja" dir="ltr">
+                    この後22:30より初のオリジナル曲『6月のプレリュード』がプレミア公開されます！<br />町田の想いを素敵な曲にしていただきました。聴いてくれると嬉しいです！<a
+                      href="https://twitter.com/hashtag/%E7%94%BA%E7%94%B0%E3%81%A1%E3%81%BE3D?src=hash&amp;ref_src=twsrc%5Etfw"
+                      >#町田ちま3D</a
+                    >
+                    <br /><br />【MV】6月のプレリュード / 町田ちま【にじさんじ】<a
+                      href="https://t.co/RjPuwDLqPe"
+                      >https://t.co/RjPuwDLqPe</a
+                    >
+                    <a href="https://t.co/6HzrAjaubR">pic.twitter.com/6HzrAjaubR</a>
+                  </p>
+                  &mdash; 町田ちま🐹7/21 21:00〜3D 水曜日！！！ (@chima_machita23)
+                  <a
+                    href="https://twitter.com/chima_machita23/status/1417835901107924996?ref_src=twsrc%5Etfw"
+                    >July 21, 2021</a
+                  >
+                </blockquote>
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+              </li>
+            </ul>
+          </div>
+          <div class="back_to_information_page">
+            <p><a href="../../information.html">back to information page</a></p>
+          </div>
         </div>
-        <div class="back_to_information_page">
-          <p><a href="../../information.html">back to information page</a></p>
-        </div>
-      </div>
-      <div id="page_top"><a href="#wrap"></a></div>
-      <div class="archive_blank">
+        <div id="page_top"><a href="#wrap"></a></div>
+        <div class="archive_blank"></div>
       </div>
     </div>
     <footer>
-      <small>Created, Designed by FU　お問い合わせは<a href="../../contact.html">こちら</a>から。<br>
+      <small
+        >Created, Designed by FU　お問い合わせは<a href="../../contact.html">こちら</a>から。</small
+      >
     </footer>
-</body>
-
+  </body>
 </html>
