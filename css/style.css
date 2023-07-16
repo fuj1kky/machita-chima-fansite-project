@@ -32,6 +32,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #2c76a1;
 }
 
 a:hover {
@@ -94,11 +95,6 @@ footer {
 
 footer small {
   font-size: 13px;
-}
-
-footer small a:link,
-a:visited {
-  color: #2c76a1;
 }
 
 input[type="text"]:focus,
@@ -271,11 +267,6 @@ p {
   padding: 0;
 }
 
-#profile .content a:link,
-a:visited {
-  color: #2c76a1;
-}
-
 #profile .hashtag ul {
   margin-bottom: 30px;
 }
@@ -402,11 +393,6 @@ summary {
   margin-bottom: 0;
 }
 
-#archive .content a:link,
-a:visited {
-  color: #2c76a1;
-}
-
 #genre_selbox {
   font-family: "Noto Serif JP", serif;
   font-weight: 100;
@@ -516,11 +502,6 @@ option {
 #songs table td {
   text-align: left;
   width: 60%;
-}
-
-#songs .content a:link,
-a:visited {
-  color: #2c76a1;
 }
 
 #information {
@@ -729,10 +710,6 @@ a:visited {
   padding-top: 15px;
 }
 
-#about .content a:link,
-a:visited {
-  color: #2c76a1;
-}
 #contact {
   background-image: url(../img/bg2.png);
   background-repeat: no-repeat;
@@ -984,11 +961,6 @@ a:visited {
     font-size: 25px;
   }
 
-  footer small a:link,
-  a:visited {
-    color: #2c76a1;
-  }
-
   #wrap {
     background-color: #ffffff;
     margin-top: 160px;
@@ -1171,11 +1143,6 @@ a:visited {
     padding: 0;
   }
 
-  #profile .content a:link,
-  a:visited {
-    color: #2c76a1;
-  }
-
   #profile .hashtag ul {
     margin-bottom: 30px;
   }
@@ -1199,11 +1166,6 @@ a:visited {
 
   #about .content ul li {
     font-size: 28px;
-  }
-
-  #about .content a:link,
-  a:visited {
-    color: #2c76a1;
   }
 
   #archive .sidebar {
