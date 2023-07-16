@@ -1,22 +1,14 @@
-$(function() {
-  var h = $(window).height();
-  $('#loading_wrapper').css('display', 'none');
-  $('#is-loading ,#loading').height(h).css('display', 'block')
-});
+const loading = document.getElementById("loading");
+const randomList = ["/img/loading-min.GIF", "/img/loading2.gif"];
+const num = Math.floor(Math.random() * randomList.length);
+const printHtml = `<img src="${randomList[num]}" alt="ランダム画像">`;
+loading.innerHTML = printHtml;
 
-$(window).on('load', function() {
-  $('#is-loading').delay(1500).fadeOut(800);
-  $('#loading').delay(1200).fadeOut(300);
-  $('#loading_wrapper').css('display', 'block');
-});
-
-
-$(function() {
-  setTimeout('stopload()', 10000);
-});
+window.addEventListener("load", stopload);
+setTimeout(stopload, 10000);
 
 function stopload() {
-  $('#loading_wrapper').css('display', 'block');
-  $('#is-loading').delay(1500).fadeOut(800);
-  $('#loading').delay(1200).fadeOut(300);
+  // imgがフェードアウトした後に#loadingがフェードアウトする
+  $("#loading").delay(1500).fadeOut(800);
+  $("#loading img").delay(1200).fadeOut(300);
 }
