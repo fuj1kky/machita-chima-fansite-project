@@ -1,96 +1,133 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>About - 町田ちま 非公式ファンサイト「inocesias.」</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css" />
+    <link rel="icon" href="img/favicon.ico" id="favicon" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script defer src="JS/loading.js" type="text/javascript"></script>
+    <script src="JS/pagetop_button.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>About - 町田ちま 非公式ファンサイト「inocesias.」</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
-  <link rel="icon" href="img/favicon.ico" id="favicon">
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
-  <script src="JS/jquery-3.6.0.min.js"></script>
-  <script src="JS/loading.js" type="text/javascript"></script>
-  <script src="JS/pagetop_button.js" type="text/javascript"></script>
-  <meta name="viewport" content="width=device-width">
-</head>
-
-<body id="about">
-  <div id="is-loading">
-    <div id="loading">
-      <script type="text/javascript">
-        var randomList = new Array(
-          "img/loading-min.GIF",
-          "img/loading2.gif"
-        );
-        var num = Math.floor(Math.random() * randomList.length);
-        var printHtml = '<img src=' + randomList[num] + ' alt="ランダム画像">';
-        document.write(printHtml);
-      </script>
+  <body id="about">
+    <div id="loading"></div>
+    <!-- header開始 -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="inocesias." />
+        </a>
+      </div>
+      <nav>
+        <ul class="global_nav">
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="archive.html">Stream Archive</a></li>
+          <li><a href="songs.html">Songs</a></li>
+          <li><a href="information.html">Information</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrap">
+      <div class="content">
+        <h2>このサイトについて</h2>
+        <p><a href="about_en.html"> English ver.</a></p>
+        <p>
+          このサイトは、ANYCOLOR株式会社にじさんじプロジェクトに所属するバーチャルライバー、町田ちまの活動支援を目的とした非公式ファンサイトです。配信アーカイブの閲覧を始めプロフィールや町田ちまに関する情報など、これまでも町田ちまを推している人はもちろん、これから知りたい！と思っている方の助けにもなればいいなと思い、Web開発の勉強の一環として制作しました。
+        </p>
+        <h3 class="icon">サイトの運用について</h3>
+        <p>
+          運用はGithubからNetlifyにデプロイを行うことで、サーバレスで動くようにしています。Netlifyの仕様上、読み込みが遅い場合がありますがご了承ください。
+        </p>
+        <h2>サイトの機能</h2>
+        <h3 class="icon">Profile</h3>
+        <p>
+          町田ちまの簡単なプロフィールを閲覧することができます。もっと知りたい…！と思った方はYoutubeかTwitterのリンクからどんな活動をしているか覗いてみましょう。
+        </p>
+        <h3 class="icon">Stream Archive</h3>
+        <p>
+          今まで行った生配信のアーカイブを見ることができます。製作者の独断で選んだ配信ジャンルでの配信の絞り込みや、歌配信のセットリストも見ることができます。再生ボタンを押せば、このサイトから直接アーカイブを再生することができます。
+        </p>
+        <h3 class="icon">Songs</h3>
+        <p>
+          歌ってみた動画の一覧を、制作に携わった方の情報と共に見ることができます。初めての方はここから見てみるといいかもしれません。
+        </p>
+        <h3 class="icon">Information</h3>
+        <p>
+          町田ちまに関する様々な情報をまとめています。随時更新の予定です。グッズ・ボイスなどお知らせのジャンルでの絞り込みができます。
+        </p>
+        <h2>注意事項</h2>
+        <ul>
+          <li>
+            このサイトは、ANYCOLOR株式会社様が策定する<a
+              href="https://event.nijisanji.app/guidelines/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >二次創作ガイドライン</a
+            >に即して制作されています。また、掲載されているイラスト・写真の無断転載・無断使用を一切禁じます。
+          </li>
+          <li>
+            このサイトはあくまで非公式のファンサイトです。ANYCOLOR株式会社様及びにじさんじプロジェクトとは一切関係ありません。従って、サイトに関する問い合わせをANYCOLOR株式会社様やその所属ライバー・各関係者に行うことはお辞めください。このサイトに関する問い合わせは全て製作者までお願いします。（下記「製作者・管理人」のTwitterのDMまたは<a
+              href="contact.html"
+              >お問い合わせフォーム</a
+            >からお願いします。）
+          </li>
+        </ul>
+        <h2>関連リンク</h2>
+        <ul>
+          <li>
+            <a href="https://www.nijisanji.jp/" target="_blank" rel="noopener noreferrer"
+              >にじさんじ　公式サイト</a
+            >
+          </li>
+          <li>
+            <a href="https://www.anycolor.co.jp/" target="_blank" rel="noopener noreferrer"
+              >ANYCOLOR株式会社:TOP</a
+            >
+          </li>
+        </ul>
+        <h2>最後に</h2>
+        <ul>
+          <li>
+            サイトの全ての機能を個人で制作しているため、表記のミスやデザインの崩れなどが起きている場合があります。その際は、お手数ですが管理人まで問い合わせしていただけると大変助かります。
+          </li>
+          <li>
+            これからも機能を随時追加したりコンテンツの更新をしていく予定ではありますが、本業の都合上どうしてもそれができない可能性があります。暖かい目で見て頂けると嬉しいです。
+          </li>
+          <li>
+            このサイトのリンクは自由に拡散していただいて構いません。こちらとしてもとてもモチベーションに繋がります。
+          </li>
+        </ul>
+        <h2>製作者・管理人</h2>
+        <p>
+          企画・ページデザイン・設計・制作・ヘッダー写真撮影:<a
+            href="https://twitter.com/______QvQ______"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            FU(@______QvQ______)</a
+          ><br />
+        </p>
+        <h2>Special Thanks</h2>
+        <p>イラスト制作（プロフィール立ち絵・ローディング画面/OGPカードSD絵）：やいちやこ</p>
+      </div>
+      <div id="page_top"><a href="#wrap"></a></div>
     </div>
-  </div>
-  <!-- header開始 -->
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="img/logo.png" alt="inocesias.">
-      </a>
-    </div>
-    <nav>
-      <ul class="global_nav">
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="archive.html">Stream Archive</a></li>
-        <li><a href="songs.html">Songs</a></li>
-        <li><a href="information.html">Information</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div id="wrap">
-    <div class="content">
-      <h2>このサイトについて</h2>
-      <p> <a href="about_en.html"> English ver.</a></p>
-      <p>このサイトは、ANYCOLOR株式会社にじさんじプロジェクトに所属するバーチャルライバー、町田ちまの活動支援を目的とした非公式ファンサイトです。配信アーカイブの閲覧を始めプロフィールや町田ちまに関する情報など、これまでも町田ちまを推している人はもちろん、これから知りたい！と思っている方の助けにもなればいいなと思い、Web開発の勉強の一環として制作しました。</p>
-      <h3 class="icon">サイトの運用について</h3>
-      <p>運用はGithubからNetlifyにデプロイを行うことで、サーバレスで動くようにしています。Netlifyの仕様上、読み込みが遅い場合がありますがご了承ください。</p>
-      <h2>サイトの機能</h2>
-      <h3 class="icon">Profile</h3>
-      <p>町田ちまの簡単なプロフィールを閲覧することができます。もっと知りたい…！と思った方はYoutubeかTwitterのリンクからどんな活動をしているか覗いてみましょう。</p>
-      <h3 class="icon">Stream Archive</h3>
-      <p>今まで行った生配信のアーカイブを見ることができます。製作者の独断で選んだ配信ジャンルでの配信の絞り込みや、歌配信のセットリストも見ることができます。再生ボタンを押せば、このサイトから直接アーカイブを再生することができます。</p>
-      <h3 class="icon">Songs</h3>
-      <p>歌ってみた動画の一覧を、制作に携わった方の情報と共に見ることができます。初めての方はここから見てみるといいかもしれません。
-      <h3 class="icon">Information</h3>
-      <p>町田ちまに関する様々な情報をまとめています。随時更新の予定です。グッズ・ボイスなどお知らせのジャンルでの絞り込みができます。</p>
-      <h2>注意事項</h2>
-      <ul>
-        <li>このサイトは、ANYCOLOR株式会社様が策定する<a href="https://event.nijisanji.app/guidelines/" target="_blank" rel="noopener noreferrer">二次創作ガイドライン</a>に即して制作されています。また、掲載されているイラスト・写真の無断転載・無断使用を一切禁じます。</li>
-        <li>このサイトはあくまで非公式のファンサイトです。ANYCOLOR株式会社様及びにじさんじプロジェクトとは一切関係ありません。従って、サイトに関する問い合わせをANYCOLOR株式会社様やその所属ライバー・各関係者に行うことはお辞めください。このサイトに関する問い合わせは全て製作者までお願いします。（下記「製作者・管理人」のTwitterのDMまたは<a href="contact.html">お問い合わせフォーム</a>からお願いします。）</li>
-      </ul>
-      <h2>関連リンク</h2>
-      <ul>
-        <li><a href="https://www.nijisanji.jp/" target="_blank" rel="noopener noreferrer">にじさんじ　公式サイト</a></li>
-        <li><a href="https://www.anycolor.co.jp/" target="_blank" rel="noopener noreferrer">ANYCOLOR株式会社:TOP</a></li>
-      </ul>
-      <h2>最後に</h2>
-      <ul>
-        <li>サイトの全ての機能を個人で制作しているため、表記のミスやデザインの崩れなどが起きている場合があります。その際は、お手数ですが管理人まで問い合わせしていただけると大変助かります。</li>
-        <li>これからも機能を随時追加したりコンテンツの更新をしていく予定ではありますが、本業の都合上どうしてもそれができない可能性があります。暖かい目で見て頂けると嬉しいです。</li>
-        <li>このサイトのリンクは自由に拡散していただいて構いません。こちらとしてもとてもモチベーションに繋がります。</li>
-      </ul>
-      <h2>製作者・管理人</h2>
-      <p>企画・ページデザイン・設計・制作・ヘッダー写真撮影:<a href="https://twitter.com/______QvQ______" target="_blank" rel="noopener noreferrer"> FU(@______QvQ______)</a><br></p>
-      <h2> Special Thanks </h2>
-      <p>イラスト制作（プロフィール立ち絵・ローディング画面/OGPカードSD絵）：やいちやこ</p>
-    </div>
-    <div id="page_top"><a href="#wrap"></a></div>
-  </div>
-  </div>
-  <footer>
-    <small>Created, Designed by FU　お問い合わせは<a href="contact.html">こちら</a>から。<br>
-  </footer>
-</body>
-
+    <footer>
+      <small>Created, Designed by FU　お問い合わせは<a href="contact.html">こちら</a>から。</small>
+    </footer>
+  </body>
 </html>

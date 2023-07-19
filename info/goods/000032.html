@@ -1,77 +1,133 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>詳細情報</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css" />
+    <link rel="icon" href="../../img/favicon.ico" id="favicon" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
+    <script src="../../JS/jquery-3.6.0.min.js"></script>
+    <script defer src="../../JS/loading.js" type="text/javascript"></script>
+    <script src="../../JS/pagetop_button.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>詳細情報</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
-  <link rel="icon" href="../../img/favicon.ico" id="favicon">
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
-  <script src="../../JS/jquery-3.6.0.min.js"></script>
-  <script src="../../JS/loading.js" type="text/javascript"></script>
-  <script src="../../JS/pagetop_button.js" type="text/javascript"></script>
-  <meta name="viewport" content="width=device-width">
-</head>
-
-<body id="info_detail">
-  <div id="is-loading">
-    <div id="loading">
-      <img src="../../img/loading-min.GIF" alt="loadingなう">
-    </div>
-  </div>
-  <!-- header開始 -->
-  <header>
-    <div class="logo">
-      <a href="../../index.html">
-        <img src="../../img/logo.png" alt="inocesias.">
-      </a>
-    </div>
-    <nav>
-      <ul class="global_nav">
-        <li><a href="../../profile.html">Profile</a></li>
-        <li><a href="../../archive.html">Stream Archive</a></li>
-        <li><a href="../../songs.html">Songs</a></li>
-        <li><a href="../../information.html">Information</a></li>
-        <li><a href="../../about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div id="wrap">
-    <div class="content">
-      <h2 class="icon">にじさんじブルーミングシーズン グッズ販売決定！</h2>
-      <div class="tags">
-        <p>グッズ</p>
+  <body id="info_detail">
+    <div id="loading"></div>
+    <!-- header開始 -->
+    <header>
+      <div class="logo">
+        <a href="../../index.html">
+          <img src="../../img/logo.png" alt="inocesias." />
+        </a>
       </div>
-      <div class="info-main-content">
-        <p>2022年5月31日18:00より、にじさんじオフィシャルストアにてにじさんじブルーミングシーズングッズの販売が開始しました。 6名のライバーが花をモチーフにしたグッズとして登場します。</p>
-        <p>参加ライバー：天宮こころ、夢追翔、白雪巴、える、ジョー・力一、町田ちま<br>
-        詳細：<a href="https://t.co/6YgpfHVbgf" target="_blank" rel="noopener noreferrer">PR TIMES</a><br>
-        にじさんじオフィシャルストアは<a href="https://shop.nijisanji.jp/s/niji/item/list?ima=2040&tag=TAG_98" target="_blank" rel="noopener noreferrer">こちら</a>から！</p>
-        <div class="info_grid">
-          <ul>
-            <li>
-              <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【<a href="https://twitter.com/hashtag/%E3%81%AB%E3%81%98%E3%81%95%E3%82%93%E3%81%98%E3%83%96%E3%83%AB%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B3?src=hash&amp;ref_src=twsrc%5Etfw">#にじさんじブルーミングシーズン</a> グッズ販売開始！】<br><br>本日より、<a href="https://twitter.com/hashtag/%E3%81%AB%E3%81%98%E3%82%B9%E3%83%88%E3%82%A2?src=hash&amp;ref_src=twsrc%5Etfw">#にじストア</a> にて「にじさんじブルーミングシーズン」グッズの販売を開始いたしました！<br><br>グッズ詳細▽<a href="https://t.co/6YgpfHVbgf">https://t.co/6YgpfHVbgf</a><br><br>販売ページはこちら！▼<br> <a href="https://t.co/2bwMTLHOOv">https://t.co/2bwMTLHOOv</a> <a href="https://t.co/Bl38gN8E0C">pic.twitter.com/Bl38gN8E0C</a></p>&mdash; にじさんじ公式🌈🕒 (@nijisanji_app) <a href="https://twitter.com/nijisanji_app/status/1531561197962682368?ref_src=twsrc%5Etfw">May 31, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </li>
-            <li>
-              <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">町田はチューリップです🌷<br>タロットカード風のイラストがとても綺麗なので是非！香りはピーチです🍑 <a href="https://t.co/ARUZA9PRFd">https://t.co/ARUZA9PRFd</a></p>&mdash; 町田ちま🐹まちたちま (@chima_machita23) <a href="https://twitter.com/chima_machita23/status/1531219127687270400?ref_src=twsrc%5Etfw">May 30, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </li>
-          </ul>
+      <nav>
+        <ul class="global_nav">
+          <li><a href="../../profile.html">Profile</a></li>
+          <li><a href="../../archive.html">Stream Archive</a></li>
+          <li><a href="../../songs.html">Songs</a></li>
+          <li><a href="../../information.html">Information</a></li>
+          <li><a href="../../about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrap">
+      <div class="content">
+        <h2 class="icon">にじさんじブルーミングシーズン グッズ販売決定！</h2>
+        <div class="tags">
+          <p>グッズ</p>
         </div>
-        <div class="back_to_information_page">
-          <p><a href="../../information.html">back to information page</a></p>
+        <div class="info-main-content">
+          <p>
+            2022年5月31日18:00より、にじさんじオフィシャルストアにてにじさんじブルーミングシーズングッズの販売が開始しました。
+            6名のライバーが花をモチーフにしたグッズとして登場します。
+          </p>
+          <p>
+            参加ライバー：天宮こころ、夢追翔、白雪巴、える、ジョー・力一、町田ちま<br />
+            詳細：<a href="https://t.co/6YgpfHVbgf" target="_blank" rel="noopener noreferrer"
+              >PR TIMES</a
+            ><br />
+            にじさんじオフィシャルストアは<a
+              href="https://shop.nijisanji.jp/s/niji/item/list?ima=2040&tag=TAG_98"
+              target="_blank"
+              rel="noopener noreferrer"
+              >こちら</a
+            >から！
+          </p>
+          <div class="info_grid">
+            <ul>
+              <li>
+                <blockquote class="twitter-tweet">
+                  <p lang="ja" dir="ltr">
+                    【<a
+                      href="https://twitter.com/hashtag/%E3%81%AB%E3%81%98%E3%81%95%E3%82%93%E3%81%98%E3%83%96%E3%83%AB%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B3?src=hash&amp;ref_src=twsrc%5Etfw"
+                      >#にじさんじブルーミングシーズン</a
+                    >
+                    グッズ販売開始！】<br /><br />本日より、<a
+                      href="https://twitter.com/hashtag/%E3%81%AB%E3%81%98%E3%82%B9%E3%83%88%E3%82%A2?src=hash&amp;ref_src=twsrc%5Etfw"
+                      >#にじストア</a
+                    >
+                    にて「にじさんじブルーミングシーズン」グッズの販売を開始いたしました！<br /><br />グッズ詳細▽<a
+                      href="https://t.co/6YgpfHVbgf"
+                      >https://t.co/6YgpfHVbgf</a
+                    ><br /><br />販売ページはこちら！▼<br />
+                    <a href="https://t.co/2bwMTLHOOv">https://t.co/2bwMTLHOOv</a>
+                    <a href="https://t.co/Bl38gN8E0C">pic.twitter.com/Bl38gN8E0C</a>
+                  </p>
+                  &mdash; にじさんじ公式🌈🕒 (@nijisanji_app)
+                  <a
+                    href="https://twitter.com/nijisanji_app/status/1531561197962682368?ref_src=twsrc%5Etfw"
+                    >May 31, 2022</a
+                  >
+                </blockquote>
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+              </li>
+              <li>
+                <blockquote class="twitter-tweet">
+                  <p lang="ja" dir="ltr">
+                    町田はチューリップです🌷<br />タロットカード風のイラストがとても綺麗なので是非！香りはピーチです🍑
+                    <a href="https://t.co/ARUZA9PRFd">https://t.co/ARUZA9PRFd</a>
+                  </p>
+                  &mdash; 町田ちま🐹まちたちま (@chima_machita23)
+                  <a
+                    href="https://twitter.com/chima_machita23/status/1531219127687270400?ref_src=twsrc%5Etfw"
+                    >May 30, 2022</a
+                  >
+                </blockquote>
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+              </li>
+            </ul>
+          </div>
+          <div class="back_to_information_page">
+            <p><a href="../../information.html">back to information page</a></p>
+          </div>
         </div>
-      </div>
-      <div id="page_top"><a href="#wrap"></a></div>
-      <div class="archive_blank">
+        <div id="page_top"><a href="#wrap"></a></div>
+        <div class="archive_blank"></div>
       </div>
     </div>
     <footer>
-      <small>Created, Designed by FU　お問い合わせは<a href="../../contact.html">こちら</a>から。<br>
+      <small
+        >Created, Designed by FU　お問い合わせは<a href="../../contact.html">こちら</a>から。</small
+      >
     </footer>
-</body>
-
+  </body>
 </html>
