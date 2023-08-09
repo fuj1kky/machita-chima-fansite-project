@@ -274,14 +274,6 @@ p {
   border-left: 9px solid #edddbb;
 }
 
-#profile {
-  background-image: url(../img/bg.webp);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: 100% auto;
-}
-
 #profile h3 {
   font-family: "Noto Serif JP", serif;
   font-weight: 350;
