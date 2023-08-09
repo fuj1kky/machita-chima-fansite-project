@@ -24,7 +24,7 @@ img {
 
 ul {
   margin: 0;
-  padding: 0;
+  padding-left: 1.5rem;
 }
 
 a {
@@ -101,6 +101,7 @@ header .inner {
 }
 
 .global_nav {
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -332,20 +333,6 @@ p {
   font-weight: 130;
   font-size: 14px;
   padding: 5px 0;
-}
-
-#archive p,
-#archive li {
-  font-weight: 150;
-  font-size: 15px;
-}
-
-#archive ul {
-  margin-bottom: 30px;
-}
-
-#archive li {
-  margin-left: 20px;
 }
 
 #page_top {

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.ul-lead {
+  margin-bottom: 1.875rem;
+}
+
+.ul-lead-item {
+  font-size: 15px;
+}
