@@ -740,15 +740,6 @@ option {
   padding-top: 15px;
 }
 
-#contact {
-  background-image: url(../img/bg2.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: 100% auto;
-  font-family: "Noto Serif JP", serif;
-}
-
 #contact .content {
   padding-bottom: 3px;
 }
