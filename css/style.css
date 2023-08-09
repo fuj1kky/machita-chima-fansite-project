@@ -322,15 +322,6 @@ p {
   margin-bottom: 30px;
 }
 
-#archive {
-  background-image: url(../img/bg.webp);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: 100% auto;
-  font-family: "Noto Serif JP", serif;
-}
-
 #archive h3 {
   font-weight: 130;
   font-size: 16px;
