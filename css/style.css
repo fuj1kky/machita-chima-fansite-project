@@ -634,15 +634,6 @@ option {
   color: #ffffff;
 }
 
-#info_detail {
-  background-image: url(../img/bg.webp);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: 100% auto;
-  font-family: "Noto Serif JP", serif;
-}
-
 #info_detail h2 {
   margin-bottom: 0;
 }
