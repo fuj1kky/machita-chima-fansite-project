@@ -794,15 +794,6 @@ option {
   margin-left: 300px;
 }
 
-#success {
-  background-image: url(../img/bg.webp);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: 100% auto;
-  font-family: "Noto Serif JP", serif;
-}
-
 #success h2 {
   font-weight: 150;
   padding-top: 50px;
