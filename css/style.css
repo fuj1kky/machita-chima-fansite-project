@@ -481,14 +481,6 @@ option {
   cursor: pointer;
   background-image: url(../img/yt_icon_rgb.png);
 }
-#songs {
-  background-image: url(../img/bg.webp);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: 100% auto;
-  font-family: "Noto Serif JP", serif;
-}
 
 #songs h3 {
   clear: both;
