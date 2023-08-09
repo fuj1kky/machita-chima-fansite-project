@@ -738,14 +738,6 @@ option {
   margin: 20px 10px;
 }
 
-#about {
-  background-image: url(../img/bg.webp);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: 100% auto;
-}
-
 #about .content {
   padding-bottom: 10px;
 }
