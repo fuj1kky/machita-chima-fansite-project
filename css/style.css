@@ -810,14 +810,6 @@ option {
   width: 300px;
 }
 
-#timeline {
-  background-image: url(../img/bg.webp);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: 100% auto;
-}
-
 #timeline .timeline-h2 {
   font-size: 27px;
   font-weight: 150;
