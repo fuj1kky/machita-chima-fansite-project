@@ -542,15 +542,6 @@ option {
   width: 60%;
 }
 
-#information {
-  background-image: url(../img/bg.webp);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: 100% auto;
-  font-family: "Noto Serif JP", serif;
-}
-
 #information #wrap .content .container {
   display: grid;
   grid-template-columns: 300px 300px 300px;
