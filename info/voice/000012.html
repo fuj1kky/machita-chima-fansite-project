@@ -1,71 +1,111 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>詳細情報</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css" />
+    <link rel="icon" href="../../img/favicon.ico" id="favicon" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
+    <script src="../../JS/jquery-3.6.0.min.js"></script>
+    <script defer src="../../JS/loading.js" type="text/javascript"></script>
+    <script src="../../JS/pagetop_button.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>詳細情報</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
-  <link rel="icon" href="../../img/favicon.ico" id="favicon">
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
-  <script src="../../JS/jquery-3.6.0.min.js"></script>
-  <script src="../../JS/loading.js" type="text/javascript"></script>
-  <script src="../../JS/pagetop_button.js" type="text/javascript"></script>
-</head>
-
-<body id="info_detail">
-  <div id="is-loading">
-    <div id="loading">
-      <img src="../../img/loading-min.GIF" alt="loadingなう">
-    </div>
-  </div>
-  <!-- header開始 -->
-  <header>
-    <div class="logo">
-      <a href="../../index.html">
-        <img src="../../img/logo.png" alt="Inocesias.">
-      </a>
-    </div>
-    <nav>
-      <ul class="global_nav">
-        <li><a href="../../profile.html">Profile</a></li>
-        <li><a href="../../archive.html">Stream Archive</a></li>
-        <li><a href="../../songs.html">Songs</a></li>
-        <li><a href="../../information.html">Information</a></li>
-        <li><a href="../../about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div id="wrap">
-    <div class="content">
-      <h2 class="icon">あめもようボイス2021&amp;七夕ボイス2021 販売決定！</h2>
-      <div class="tags">
-        <p>ボイス</p>
+  <body id="info_detail">
+    <div id="loading"></div>
+    <!-- header開始 -->
+    <header>
+      <div class="logo">
+        <a href="../../index.html">
+          <img src="../../img/logo.png" alt="Inocesias." />
+        </a>
       </div>
-      <div class="info-main-content">
-        <p>2021年6月23日より、にじさんじあめもようボイス2021&amp;にじさんじ七夕ボイス2021の販売が開始します。町田ちまはにじさんじ七夕ボイス2021に参加しています。</p>
-        <p>詳しくはこちらのページから！：<a href="https://prtimes.jp/main/html/rd/p/000000280.000030865.html" target="_blank" rel="noopener noreferrer">PR TIMES</a><br>
-        <div class="info_grid">
-          <ul>
-            <li>
-              <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【あめもようボイス2021＆七夕ボイス2021 販売決定！】<a href="https://twitter.com/hashtag/%E3%81%AB%E3%81%98%E3%81%95%E3%82%93%E3%81%98%E3%81%82%E3%82%81%E3%82%82%E3%82%88%E3%81%86%E3%83%9C%E3%82%A4%E3%82%B92021?src=hash&amp;ref_src=twsrc%5Etfw">#にじさんじあめもようボイス2021</a><a href="https://twitter.com/hashtag/%E3%81%AB%E3%81%98%E3%81%95%E3%82%93%E3%81%98%E4%B8%83%E5%A4%95%E3%83%9C%E3%82%A4%E3%82%B92021?src=hash&amp;ref_src=twsrc%5Etfw">#にじさんじ七夕ボイス2021</a><br>2種類の季節ボイスの販売が決定！<br><br>≪ 6/23(水)18:00 ≫から、にじさんじオフィシャルストアにて販売いたします！<br><br>詳細はこちら！▽<a href="https://t.co/4FpQFt4zHB">https://t.co/4FpQFt4zHB</a><a href="https://twitter.com/hashtag/%E3%81%AB%E3%81%98%E3%82%B9%E3%83%88%E3%82%A2?src=hash&amp;ref_src=twsrc%5Etfw">#にじストア</a> <a href="https://t.co/SpkRTKLOIl">pic.twitter.com/SpkRTKLOIl</a></p>&mdash; にじさんじ公式🌈🕒 (@nijisanji_app) <a href="https://twitter.com/nijisanji_app/status/1406809467900116994?ref_src=twsrc%5Etfw">June 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </li>
-          </ul>
+      <nav>
+        <ul class="global_nav">
+          <li><a href="../../profile.html">Profile</a></li>
+          <li><a href="../../archive.html">Stream Archive</a></li>
+          <li><a href="../../songs.html">Songs</a></li>
+          <li><a href="../../information.html">Information</a></li>
+          <li><a href="../../about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrap">
+      <div class="content">
+        <h2 class="icon">あめもようボイス2021&amp;七夕ボイス2021 販売決定！</h2>
+        <div class="tags">
+          <p>ボイス</p>
         </div>
-        <div class="back_to_information_page">
-          <p><a href="../../information.html">back to information page</a></p>
+        <div class="info-main-content">
+          <p>
+            2021年6月23日より、にじさんじあめもようボイス2021&amp;にじさんじ七夕ボイス2021の販売が開始します。町田ちまはにじさんじ七夕ボイス2021に参加しています。
+          </p>
+          <p>
+            詳しくはこちらのページから！：<a
+              href="https://prtimes.jp/main/html/rd/p/000000280.000030865.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >PR TIMES</a
+            ><br />
+          </p>
+          <div class="info_grid">
+            <ul>
+              <li>
+                <blockquote class="twitter-tweet">
+                  <p lang="ja" dir="ltr">
+                    【あめもようボイス2021＆七夕ボイス2021 販売決定！】<a
+                      href="https://twitter.com/hashtag/%E3%81%AB%E3%81%98%E3%81%95%E3%82%93%E3%81%98%E3%81%82%E3%82%81%E3%82%82%E3%82%88%E3%81%86%E3%83%9C%E3%82%A4%E3%82%B92021?src=hash&amp;ref_src=twsrc%5Etfw"
+                      >#にじさんじあめもようボイス2021</a
+                    ><a
+                      href="https://twitter.com/hashtag/%E3%81%AB%E3%81%98%E3%81%95%E3%82%93%E3%81%98%E4%B8%83%E5%A4%95%E3%83%9C%E3%82%A4%E3%82%B92021?src=hash&amp;ref_src=twsrc%5Etfw"
+                      >#にじさんじ七夕ボイス2021</a
+                    ><br />2種類の季節ボイスの販売が決定！<br /><br />≪ 6/23(水)18:00
+                    ≫から、にじさんじオフィシャルストアにて販売いたします！<br /><br />詳細はこちら！▽<a
+                      href="https://t.co/4FpQFt4zHB"
+                      >https://t.co/4FpQFt4zHB</a
+                    ><a
+                      href="https://twitter.com/hashtag/%E3%81%AB%E3%81%98%E3%82%B9%E3%83%88%E3%82%A2?src=hash&amp;ref_src=twsrc%5Etfw"
+                      >#にじストア</a
+                    >
+                    <a href="https://t.co/SpkRTKLOIl">pic.twitter.com/SpkRTKLOIl</a>
+                  </p>
+                  &mdash; にじさんじ公式🌈🕒 (@nijisanji_app)
+                  <a
+                    href="https://twitter.com/nijisanji_app/status/1406809467900116994?ref_src=twsrc%5Etfw"
+                    >June 21, 2021</a
+                  >
+                </blockquote>
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+              </li>
+            </ul>
+          </div>
+          <div class="back_to_information_page">
+            <p><a href="../../information.html">back to information page</a></p>
+          </div>
         </div>
-      </div>
-      <div id="page_top"><a href="#wrap"></a></div>
-      <div class="archive_blank">
+        <div id="page_top"><a href="#wrap"></a></div>
+        <div class="archive_blank"></div>
       </div>
     </div>
     <footer>
-      <small>Created, Designed by FU　お問い合わせは<a href="../../contact.html">こちら</a>から。<br>
+      <small
+        >Created, Designed by FU　お問い合わせは<a href="../../contact.html">こちら</a>から。</small
+      >
     </footer>
-</body>
-
+  </body>
 </html>

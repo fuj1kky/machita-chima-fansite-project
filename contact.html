@@ -1,65 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Contact - 町田ちま 非公式ファンサイト「inocesias.」</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="img/favicon.ico" id="favicon">
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
-  <script src="JS/jquery-3.6.0.min.js"></script>
-  <script src="JS/loading.js" type="text/javascript"></script>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact - 町田ちま 非公式ファンサイト「inocesias.」</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" id="favicon" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script defer src="JS/loading.js" type="text/javascript"></script>
+  </head>
 
-<body id="contact">
-  <div id="is-loading">
-    <div id="loading">
-      <img src="img/loading-min.GIF" alt="loadingなう">
-    </div>
-  </div>
-  <!-- header開始 -->
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="img/logo.png" alt="inocesias.">
-      </a>
-    </div>
-    <nav>
-      <ul class="global_nav">
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="archive.html">Stream Archive</a></li>
-        <li><a href="songs.html">Songs</a></li>
-        <li><a href="information.html">Information</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div id="wrap">
-    <div class="content">
-      <h2>問い合わせフォーム</h2>
-      <p>サイトに関する問い合わせはこちらから。<br>返信が必要だと判断した場合は、記載していただいたメールアドレスに返信をさせていただきます。メールアドレスを始めとした個人情報は厳正に取り扱いますが、万が一のトラブル防止のため極力個人情報を含む内容は送らないようにしてください。また、管理人のTwitterのDMでも問い合わせを受け付けています。</p>
-      <div class="form">
-        <form name="contact" method="post" data-netlify-recaptcha="true" action="/success.html" netlify>
-          <dl class="">
-            <dt><span class="required">お名前（ニックネームでも可）</span></dt>
-            <dd><input type="text" name="name" class="name" required></dd>
-            <dt><span class="required">メールアドレス</span></dt>
-            <dd><input type="email" name="email" class="email" required> </dd>
-            <dt><span class="required">メッセージ</span></dt>
-            <dd><textarea name="message" class="message" required></textarea></dd>
-            <div data-netlify-recaptcha="true" class="recaptcha"></div>
-          </dl>
-          <button type="submit" class="submit_btn">送信</button>
-          <p>「 <span class="required"></span> 」のついている項目は必須項目です。</p>
-        </form>
+  <body id="contact">
+    <div id="loading"></div>
+    <!-- header開始 -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="inocesias." />
+        </a>
+      </div>
+      <nav>
+        <ul class="global_nav">
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="archive.html">Stream Archive</a></li>
+          <li><a href="songs.html">Songs</a></li>
+          <li><a href="information.html">Information</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrap">
+      <div class="content">
+        <h2>問い合わせフォーム</h2>
+        <p>
+          サイトに関する問い合わせはこちらから。<br />返信が必要だと判断した場合は、記載していただいたメールアドレスに返信をさせていただきます。メールアドレスを始めとした個人情報は厳正に取り扱いますが、万が一のトラブル防止のため極力個人情報を含む内容は送らないようにしてください。また、管理人のTwitterのDMでも問い合わせを受け付けています。
+        </p>
+        <div class="form">
+          <form
+            name="contact"
+            method="post"
+            data-netlify-recaptcha="true"
+            action="/success.html"
+            netlify
+          >
+            <dl class="">
+              <dt><span class="required">お名前（ニックネームでも可）</span></dt>
+              <dd><input type="text" name="name" class="name" required /></dd>
+              <dt><span class="required">メールアドレス</span></dt>
+              <dd><input type="email" name="email" class="email" required /></dd>
+              <dt><span class="required">メッセージ</span></dt>
+              <dd><textarea name="message" class="message" required></textarea></dd>
+              <div data-netlify-recaptcha="true" class="recaptcha"></div>
+            </dl>
+            <button type="submit" class="submit_btn">送信</button>
+            <p>「 <span class="required"></span> 」のついている項目は必須項目です。</p>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-  <footer>
-    <small>Created, Designed by FU.<br>
-  </footer>
-</body>
-
+    <footer>
+      <small>Created, Designed by FU.</small>
+    </footer>
+  </body>
 </html>

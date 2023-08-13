@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var display_minecraft = document.getElementsByClassName('minecraft');
     var display_shinycolors = document.getElementsByClassName('shinycolors');
     var display_valorant = document.getElementsByClassName('valorant');
+    var display_OneHandClapping = document.getElementsByClassName('OneHandClapping');
+    var display_splatoon = document.getElementsByClassName('splatoon');
     var display_othergame = document.getElementsByClassName('othergame');
     var display_talk = document.getElementsByClassName('talk');
     var display_durable_immediately = document.getElementsByClassName('durable_immediately');
@@ -50,6 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
         display_valorant = Array.from(display_valorant);
         for (var i = 0; i < display_shinycolors.length; i++) {
           display_valorant[i].style.display = "";
+        }
+        break;
+      case 'genre_OneHandClapping':
+        display_OneHandClapping = Array.from(display_OneHandClapping);
+        for (var i = 0; i < display_OneHandClapping.length; i++) {
+          display_OneHandClapping[i].style.display = "";
+        }
+        break;
+      case 'genre_splatoon':
+        display_splatoon = Array.from(display_splatoon);
+        for (var i = 0; i < display_splatoon.length; i++) {
+          display_splatoon[i].style.display = "";
         }
         break;
       case 'genre_othergame':
@@ -113,6 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var display_appearance = document.getElementsByClassName('appearance');
     var display_voice = document.getElementsByClassName('voice');
     var display_music = document.getElementsByClassName('music');
+    var display_nornis = document.getElementsByClassName('nornis');
 
     display_all = Array.from(display_all);
     for (var i = 0; i < display_all.length; i++) {
@@ -149,12 +164,19 @@ document.addEventListener("DOMContentLoaded", function () {
         for (var i = 0; i < display_voice.length; i++) {
           display_voice[i].style.display = "";
         }
+      break;
       case 'genre_music':
         display_music = Array.from(display_music);
         for (var i = 0; i < display_music.length; i++) {
           display_music[i].style.display = "";
         }
         break;
+      case 'genre_nornis':
+      display_nornis = Array.from(display_nornis);
+      for (var i = 0; i < display_nornis.length; i++) {
+        display_nornis[i].style.display = "";
+      }
+      break;
       default:
 
     }

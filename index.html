@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8" />
+    <title>inocesias. - 町田ちま 非公式ファンサイト</title>
+    <meta property="og:title" content="inocesias. - 町田ちま 非公式ファンサイト" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://inocesias.netlify.app/" />
+    <meta property="og:image" content="https://inocesias.netlify.app/img/ogp.png" />
+    <meta property="og:site_name" content="inocesias. - 町田ちま 非公式ファンサイト" />
+    <meta
+      property="og:description"
+      content="にじさんじプロジェクト所属バーチャルライバー町田ちまの非公式ファンサイトです。"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/favicon.ico" id="favicon" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="JS/jquery-3.6.0.min.js"></script>
+    <script defer src="JS/loading.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width" />
+  </head>
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-  <meta charset="utf-8">
-  <title>inocesias. - 町田ちま 非公式ファンサイト</title>
-  <meta property="og:title" content="inocesias. - 町田ちま 非公式ファンサイト" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://inocesias.netlify.app/" />
-  <meta property="og:image" content="https://inocesias.netlify.app/img/ogp.png" />
-  <meta property="og:site_name" content="inocesias. - 町田ちま 非公式ファンサイト" />
-  <meta property="og:description" content="にじさんじプロジェクト所属バーチャルライバー町田ちまの非公式ファンサイトです。" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
-  <link rel="icon" href="img/favicon.ico" id="favicon">
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
-  <link rel="stylesheet" href="css/style.css">
-  <script src="JS/jquery-3.6.0.min.js"></script>
-  <script src="JS/loading.js" type="text/javascript"></script>
-  <meta name="viewport" content="width=device-width">
-</head>
-
-<body id="index">
-  <div id="is-loading">
-    <div id="loading">
-      <img src="img/loading-min.GIF" alt="loadingなう">
-    </div>
-  </div>
-  <!-- header開始 -->
-  <header>
-    <div id="loading_wrapper">
+  <body id="index">
+    <div id="loading"></div>
+    <!-- header開始 -->
+    <header>
       <div class="logo">
         <a href="index.html">
-          <img src="img/logo.png" alt="inocesias.">
+          <img src="img/logo.png" alt="inocesias." />
         </a>
       </div>
       <nav>
@@ -46,37 +48,51 @@
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
-  </header>
-  <div id="wrap" class="clearfix">
-    <div class="content">
-      <div class="main-content">
-        <p> このサイトは、ANYCOLOR株式会社にじさんじプロジェクト所属バーチャルライバー町田ちまの活動支援を目的とした非公式ファンサイトです。
-          配信アーカイブの参照や町田ちまに関する情報をまとめています。ぜひご活用ください。各種機能は右上のメニューから。<br>
-          ※ANYCOLOR株式会社様及びにじさんじプロジェクトとは一切関係ありません。</p>
-        <a href="about.html">
-          <div class="toabout-btn">
-            このサイトについて（初めての方はご一読ください）
+    </header>
+    <div id="wrap" class="clearfix">
+      <div class="content">
+        <div class="main-content">
+          <p>
+            このサイトは、ANYCOLOR株式会社にじさんじプロジェクト所属バーチャルライバー町田ちまの活動支援を目的とした非公式ファンサイトです。
+            配信アーカイブの参照や町田ちまに関する情報をまとめています。ぜひご活用ください。各種機能は右上のメニューから。<br />
+            ※ANYCOLOR株式会社様及びにじさんじプロジェクトとは一切関係ありません。
+          </p>
+          <a href="about.html">
+            <div class="toabout-btn">このサイトについて（初めての方はご一読ください）</div>
+          </a>
+          <a href="timeline.html">
+            <div class="tl-btn">YoutubeCH登録者50万人突破記念 これまでの歩み</div>
+          </a>
+        </div>
+        <div class="left-content">
+          <h2 class="icon">最新ツイート</h2>
+          <a
+            class="twitter-timeline"
+            data-width="350"
+            data-height="500"
+            href="https://twitter.com/chima_machita23?ref_src=twsrc%5Etfw"
+            >Tweets by chima_machita23</a
+          >
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="right-content">
+          <h2 class="icon">最新動画</h2>
+          <div class="frame-wrapper__video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/?list=UUo7TRj3cS-f_1D9ZDmuTsjw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
-        </a>
-      </div>
-      <div class="left-content">
-        <h2 class="icon">最新ツイート</h2>
-        <a class="twitter-timeline" data-width="350" data-height="500"
-          href="https://twitter.com/chima_machita23?ref_src=twsrc%5Etfw">Tweets by chima_machita23</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-      <div class="right-content">
-        <h2 class="icon">最新動画</h2>
-        <div class="frame-wrapper__video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/qqw7r03nEAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
-  </div>
-  <footer>
-    <small>Created, Designed by FU　お問い合わせは<a href="contact.html">こちら</a>から。<br>
-  </footer>
-  </div>
-</body>
-
+    <footer>
+      <small>Created, Designed by FU　お問い合わせは<a href="contact.html">こちら</a>から。</small>
+    </footer>
+  </body>
 </html>
