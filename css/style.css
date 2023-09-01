@@ -38,7 +38,7 @@ a:hover {
 
 .inner {
   @media screen and (width <= 600px) {
-    padding: 3rem 1.5rem;
+    padding: 48px 24px;
   }
 
   @media screen and (600px < width) {
@@ -76,7 +76,7 @@ header {
   @media screen and (600px < width) {
     background-size: 100%;
     background-attachment: fixed;
-    padding-block: 65px;
+    padding-block: 74px;
   }
 }
 
