@@ -17,20 +17,38 @@
 
 .songs-content-title {
   font-weight: normal;
-  font-size: 1rem;
   padding-block: 5px;
 
   /* responsiveブランチと合わせるときに削除する */
   margin: 0;
+
+  @media screen and (width <= 600px) {
+    font-size: 1.875rem;
+  }
+
+  @media screen and (600px < width) {
+    font-size: 1rem;
+  }
 }
 
 .songs-content-body {
-  margin-top: 1rem;
-  margin-left: 27px; /*.iconの分だけインデントする*/
-  display: grid;
-  grid-template-columns: 5fr 4fr;
-  gap: 32px;
-  align-items: start;
+  @media screen and (width <= 600px) {
+    width: 90%;
+    margin-top: 30px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (600px < width) {
+    margin-top: 1rem;
+    margin-left: 27px; /*.iconの分だけインデントする*/
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    gap: 32px;
+    align-items: start;
+  }
 }
 
 .songs-content-body-thumb {
@@ -74,7 +92,13 @@
 }
 
 .songs-content-body-info {
-  font-size: 0.8125rem;
+  @media screen and (width <= 600px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (600px < width) {
+    font-size: 0.8125rem;
+  }
 
   /* ↓いずれtableのリセットCSSとして使いたい */
   border-collapse: collapse;

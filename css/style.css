@@ -1198,12 +1198,6 @@ option {
     font-size: 22px;
   }
 
-  #archive table th,
-  table td {
-    padding: 5px 0;
-    text-align: center;
-  }
-
   .yt_play::before {
     /* YouTubeアイコン */
     width: 84px;
@@ -1211,24 +1205,6 @@ option {
     transform: translate(-50%, -50%);
     opacity: 0.9;
     transition: 0.5s;
-  }
-
-  #songs h3 {
-    font-size: 30px;
-  }
-
-  #songs .content .youtube_content {
-    float: none;
-    margin: 0 20px;
-  }
-
-  #songs .content table {
-    float: none;
-    width: 90%;
-    font-size: 24px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 50px;
   }
 
   #information #wrap .content .container {
