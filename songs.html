@@ -17,10 +17,13 @@
     <link rel="stylesheet" href="css/songs.css" />
     <link rel="icon" href="img/favicon.ico" id="favicon" />
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"> -->
-    <script src="JS/thumbnail_select.js" type="text/javascript"></script>
-    <script src="JS/jquery-3.6.0.min.js"></script>
-    <script defer src="JS/loading.js" type="text/javascript"></script>
-    <script src="JS/pagetop_button.js" type="text/javascript"></script>
+
+    <script defer src="JS/util.js"></script>
+    <script defer src="JS/jquery-3.6.0.min.js"></script>
+    <script defer src="JS/loading.js"></script>
+    <script defer src="JS/songs.js"></script>
+    <script defer src="JS/pagetop_button.js"></script>
+
     <meta name="viewport" content="width=device-width" />
   </head>
 
@@ -62,163 +65,7 @@
           </li>
         </ul>
 
-        <ul class="songs-contents" id="songsContents">
-          <li class="songs-content">
-            <h3 class="songs-content-title icon">Nornis - アイデンティティ (cover)</h3>
-
-            <div class="songs-content-body">
-              <button type="button" class="songs-content-body-thumb">
-                <img
-                  class="songs-content-body-thumb-img"
-                  src="https://img.youtube.com/vi/Y1Mexcyri-Q/maxresdefault.jpg"
-                />
-              </button>
-
-              <table class="songs-content-body-info">
-                <tr>
-                  <th>Vocal</th>
-                  <td>Nornis<br />(町田ちま/戌亥とこ)</td>
-                </tr>
-                <tr>
-                  <th>Key</th>
-                  <td>宇都圭輝</td>
-                </tr>
-                <tr>
-                  <th>Bass</th>
-                  <td>勝矢匠</td>
-                </tr>
-                <tr>
-                  <th>Programming</th>
-                  <td>佐々木正明, <br />アキモトユウスケ</td>
-                </tr>
-                <tr>
-                  <th>Recording Engineer</th>
-                  <td>アキモトユウスケ</td>
-                </tr>
-                <tr>
-                  <th>Mastering Engineer</th>
-                  <td>矢内 康公</td>
-                </tr>
-                <tr>
-                  <th>Movie</th>
-                  <td>shuuya</td>
-                </tr>
-                <tr>
-                  <th>Illust</th>
-                  <td>まるい</td>
-                </tr>
-                <tr>
-                  <th>Original</th>
-                  <td>
-                    <a href="https://youtu.be/M9moY0hEJRE" target="_blank" rel="noopener noreferrer"
-                      >【GUMI×初音ミク】アイデンティティ/Kanaria</a
-                    >
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </li>
-
-          <li class="songs-content">
-            <h3 class="songs-content-title icon">
-              サマータイムレコード / じん (covered by にじさんじカゲプロ)
-            </h3>
-
-            <div class="songs-content-body">
-              <button type="button" class="songs-content-body-thumb">
-                <img
-                  class="songs-content-body-thumb-img"
-                  src="https://img.youtube.com/vi/o0Mt2sGGaeI/maxresdefault.jpg"
-                />
-              </button>
-
-              <table class="songs-content-body-info">
-                <tr>
-                  <th>Vocal</th>
-                  <td>
-                    緑仙/リゼ・ヘルエスタ/弦月藤士郎/<br />西園チグサ/レイン・パターソン/<br />星川サラ/渡会雲雀/葉加瀬冬雪/ましろ/<br />樋口楓/戌亥とこ/町田ちま/三枝明那
-                  </td>
-                </tr>
-                <tr>
-                  <th>Illust</th>
-                  <td>ひなつ</td>
-                </tr>
-                <tr>
-                  <th>Movie</th>
-                  <td>有栖 永真</td>
-                </tr>
-                <tr>
-                  <th>Mix</th>
-                  <td>よしけん</td>
-                </tr>
-                <tr>
-                  <th>Original</th>
-                  <td>
-                    <a href="https://youtu.be/qB4xRKllyeI" target="_blank" rel="noopener noreferrer"
-                      >サマータイムレコード (IA)/じん</a
-                    >
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </li>
-
-          <li class="songs-content">
-            <h3 class="songs-content-title icon">Nornis - アイデンティティ (cover)</h3>
-
-            <div class="songs-content-body">
-              <button type="button" class="songs-content-body-thumb">
-                <img
-                  class="songs-content-body-thumb-img"
-                  src="https://img.youtube.com/vi/Y1Mexcyri-Q/maxresdefault.jpg"
-                />
-              </button>
-
-              <table class="songs-content-body-info">
-                <tr>
-                  <th>Vocal</th>
-                  <td>Nornis<br />(町田ちま/戌亥とこ)</td>
-                </tr>
-                <tr>
-                  <th>Key</th>
-                  <td>宇都圭輝</td>
-                </tr>
-                <tr>
-                  <th>Bass</th>
-                  <td>勝矢匠</td>
-                </tr>
-                <tr>
-                  <th>Programming</th>
-                  <td>佐々木正明, <br />アキモトユウスケ</td>
-                </tr>
-                <tr>
-                  <th>Recording Engineer</th>
-                  <td>アキモトユウスケ</td>
-                </tr>
-                <tr>
-                  <th>Mastering Engineer</th>
-                  <td>矢内 康公</td>
-                </tr>
-                <tr>
-                  <th>Movie</th>
-                  <td>shuuya</td>
-                </tr>
-                <tr>
-                  <th>Illust</th>
-                  <td>まるい</td>
-                </tr>
-                <tr>
-                  <th>Original</th>
-                  <td>
-                    <a href="https://youtu.be/M9moY0hEJRE" target="_blank" rel="noopener noreferrer"
-                      >【GUMI×初音ミク】アイデンティティ/Kanaria</a
-                    >
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </li>
-        </ul>
+        <ul class="songs-contents" id="songsContents"></ul>
       </div>
     </div>
     <footer>
