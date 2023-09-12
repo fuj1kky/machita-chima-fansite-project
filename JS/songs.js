@@ -16,6 +16,7 @@
             <img
               class="songs-content-body-thumb-img"
               src="https://img.youtube.com/vi/${songObj.videoId}/maxresdefault.jpg"
+              loading="lazy"
             />
           </button>
 
