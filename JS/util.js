@@ -1,5 +1,5 @@
 /**
- * data.jsonを取り込む
+ * jsonファイルを取り込む
  * @param {string} json_url fetchしたいjsonのurl
  * @return {object} Promise
  */
