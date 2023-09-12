@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+.songs-lead-ul {
+  margin-left: 23px;
+  margin-bottom: 30px;
+}
+
+.songs-contents {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  /* responsiveブランチと合わせるときに削除する */
+  margin-bottom: 50px;
+}
+
+.songs-content-title {
+  font-weight: normal;
+  padding-block: 5px;
+
+  /* responsiveブランチと合わせるときに削除する */
+  margin: 0;
+
+  @media screen and (width <= 600px) {
+    font-size: 1.875rem;
+  }
+
+  @media screen and (600px < width) {
+    font-size: 1rem;
+  }
+}
+
+.songs-content-body {
+  @media screen and (width <= 600px) {
+    width: 90%;
+    margin-top: 30px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (600px < width) {
+    margin-top: 1rem;
+    margin-left: 27px; /*.iconの分だけインデントする*/
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    gap: 32px;
+    align-items: start;
+  }
+}
+
+.songs-content-body-thumb {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/yt_icon_mono_light.png);
+    background-size: contain;
+    width: 14%;
+    aspect-ratio: 7 / 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    transition: 0.5s;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-image: url(../img/yt_icon_rgb.png);
+    }
+  }
+
+  /* ↓いずれbuttonのリセットCSSとして使いたい */
+  appearance: none;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+
+  /*↓responsiveブランチと合わせるときに削除する*/
+  padding: 0;
+}
+
+.songs-content-body-thumb-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.songs-content-body-info {
+  @media screen and (width <= 600px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (600px < width) {
+    font-size: 0.8125rem;
+  }
+
+  /* ↓いずれtableのリセットCSSとして使いたい */
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.songs-content-body-info tr {
+  border-bottom: 1px solid #b5a98f;
+}
+
+.songs-content-body-info th,
+.songs-content-body-info td {
+  /* ↓いずれth, tdのリセットCSSとして使いたい */
+  padding-block: 5px;
+}
+
+.songs-content-body-info th {
+  width: 40%;
+}
+
+.songs-content-body-info td {
+  width: 60%;
+}

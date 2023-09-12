@@ -386,7 +386,7 @@ li {
 }
 
 #archive table th,
-table td {
+#archive table td {
   padding: 5px 0;
   text-align: center;
 }
@@ -469,6 +469,7 @@ option {
   cursor: pointer;
   background-image: url(../img/yt_icon_rgb.png);
 }
+
 #songs {
   background-image: url(../img/bg.webp);
   background-repeat: no-repeat;
@@ -476,50 +477,6 @@ option {
   background-attachment: fixed;
   background-size: 100% auto;
   font-family: "Noto Serif JP", serif;
-}
-
-#songs h3 {
-  clear: both;
-  font-weight: 130;
-  font-size: 16px;
-  padding: 5px 0;
-}
-
-#songs #wrap ul {
-  margin-left: 23px;
-  margin-bottom: 30px;
-}
-
-.songs_content p {
-  margin-bottom: 0;
-}
-
-#songs .content .youtube_content {
-  float: left;
-  margin-bottom: 20px;
-}
-
-#songs .content table {
-  float: right;
-  width: 400px;
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin-bottom: 50px;
-  font-size: 13px;
-}
-
-#songs table tr {
-  border-bottom: 1px solid #b5a98f;
-}
-
-#songs table th {
-  text-align: left;
-  width: 40%;
-}
-
-#songs table td {
-  text-align: left;
-  width: 60%;
 }
 
 #information {
@@ -897,11 +854,6 @@ option {
   text-decoration: none;
 }
 
-@media screen and (min-width: 601px) {
-  #songs .songs_content_responsible {
-    display: none;
-  }
-}
 @media screen and (max-width: 600px) {
   /* 画面サイズが600px以下の場合に適用 */
   body {
@@ -1246,12 +1198,6 @@ option {
     font-size: 22px;
   }
 
-  #archive table th,
-  table td {
-    padding: 5px 0;
-    text-align: center;
-  }
-
   .yt_play::before {
     /* YouTubeアイコン */
     width: 84px;
@@ -1259,28 +1205,6 @@ option {
     transform: translate(-50%, -50%);
     opacity: 0.9;
     transition: 0.5s;
-  }
-
-  #songs .songs_content_pc {
-    display: none;
-  }
-
-  #songs h3 {
-    font-size: 30px;
-  }
-
-  #songs .content .youtube_content {
-    float: none;
-    margin: 0 20px;
-  }
-
-  #songs .content table {
-    float: none;
-    width: 90%;
-    font-size: 24px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 50px;
   }
 
   #information #wrap .content .container {
