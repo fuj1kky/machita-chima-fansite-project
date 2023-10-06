@@ -58,6 +58,7 @@
     content: "";
     position: absolute;
     background-image: url(../img/yt_icon_mono_light.png);
+    background-repeat: no-repeat;
     background-size: contain;
     width: 14%;
     aspect-ratio: 7 / 5;
