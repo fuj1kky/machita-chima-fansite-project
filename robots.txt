@@ -1,0 +1,4 @@
+User-agent: Googlebot-Image
+Disallow: /img/loading*
+Disallow: /img/profile.png
+Disallow: /img/ogp.png
